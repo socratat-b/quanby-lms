@@ -101,3 +101,5 @@ sample
 ### Changelog for now
 
 [deployment of app to firebase](https://www.npmjs.com/package/@angular/fire)
+
+[Vercel Deployment Demo](https://quanby-lms.vercel.app/)
