@@ -88,8 +88,16 @@ The Angular name and logos are trademarks of Google.
 
 sample
 
-    command: ng generate component {folder}/{module name}
+    ng generate directive|pipe|service|class|guard|interface|enum|module
+    
+    if you want to create a modules this is the command: ng generate component {folder}/{module name}
 
     ```bash
         ng generate component modules/home
     ```
+
+    reference: https://vercel.com/templates/angular/angular-boilerplate
+
+### Changelog for now
+
+[deployment of app to firebase](https://www.npmjs.com/package/@angular/fire)
