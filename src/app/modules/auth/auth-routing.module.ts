@@ -19,6 +19,12 @@ const routes: Routes = [
       { path: 'new-password', component: NewPasswordComponent },
       { path: 'two-steps', component: TwoStepsComponent },
       { path: '**', redirectTo: 'sign-in', pathMatch: 'full' },
+
+
+
+
+
+      // add something here
     ],
   },
 ];

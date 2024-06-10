@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component /*, OnInit */ } from '@angular/core';
 import { AngularSvgIconModule } from 'angular-svg-icon';
 import { RouterLink } from '@angular/router';
 import { FormsModule } from '@angular/forms';
@@ -11,8 +11,8 @@ import { ButtonComponent } from 'src/app/shared/components/button/button.compone
   standalone: true,
   imports: [FormsModule, RouterLink, AngularSvgIconModule, ButtonComponent],
 })
-export class NewPasswordComponent implements OnInit {
+export class NewPasswordComponent /* implements OnInit */ {
   constructor() {}
 
-  ngOnInit(): void {}
+  // ngOnInit(): void {}
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component /*, OnInit */ } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
@@ -7,8 +7,8 @@ import { RouterOutlet } from '@angular/router';
   standalone: true,
   imports: [RouterOutlet],
 })
-export class DashboardComponent implements OnInit {
+export class DashboardComponent /* implements OnInit */ {
   constructor() {}
 
-  ngOnInit(): void {}
+  // ngOnInit(): void {}
 }
