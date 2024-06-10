@@ -83,3 +83,13 @@ This project uses [Hero Icons](https://heroicons.com/), [Hero Patterns](https://
 
 The Tailwind name and logos are trademarks of Tailwind Labs Inc.
 The Angular name and logos are trademarks of Google.
+
+#### Create Component
+
+sample
+
+    command: ng generate component {folder}/{module name}
+
+    ```bash
+        ng generate component modules/home
+    ```
