@@ -58,3 +58,83 @@ deprecated
 -> npm install --save-dev @angular-eslint/builder 
 -> npm install --save-dev eslint
 -> npm install --save-dev commitizen
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+npm install @angular/animations
+npm install @angular/common
+npm install @angular/compiler
+npm install @angular/core
+npm install @angular/forms
+npm install @angular/platform-browser
+npm install @angular/platform-browser-dynamic
+npm install @angular/router
+npm install @tailwindcss/aspect-ratio
+npm install @tailwindcss/forms
+npm install @tailwindcss/typography
+npm install angular-svg-icon
+npm install apexcharts
+npm install chart.js
+npm install echarts
+npm install lru-cache
+npm install ng2-charts
+npm install ngx-echarts
+npm install rxjs
+npm install tslib
+npm install zone.js
+npm install --save-dev @angular-devkit/build-angular
+npm install --save-dev rimraf
+npm install --save-dev @angular-eslint/eslint-plugin
+npm install --save-dev @angular-eslint/builder 
+npm install --save-dev eslint
+npm install --save-dev commitizen
+npm install --save-dev @angular-eslint/eslint-plugin-template
+npm install --save-dev @angular-eslint/schematics
+npm install --save-dev @angular-eslint/template-parser
+npm install --save-dev @angular/cli
+npm install --save-dev @angular/compiler-cli
+npm install --save-dev @npmcli/package-json
+npm install --save-dev @playwright/test
+npm install --save-dev @types/jasmine
+npm install --save-dev @types/node
+npm install --save-dev @typescript-eslint/eslint-plugin
+npm install --save-dev @typescript-eslint/parser
+npm install --save-dev @typescript-eslint/utils
+npm install --save-dev autoprefixer
+npm install --save-dev babel-plugin-istanbul
+npm install --save-dev cz-conventional-changelog
+npm install --save-dev jasmine-core
+npm install --save-dev karma
+npm install --save-dev karma-chrome-launcher
+npm install --save-dev karma-coverage
+npm install --save-dev karma-jasmine
+npm install --save-dev karma-jasmine-html-reporter
+npm install --save-dev postcss
+npm install --save-dev prettier
+npm install --save-dev prettier-plugin-tailwindcss
+npm install --save-dev tailwind-scrollbar
+npm install --save-dev tailwindcss
+npm install --save-dev typescript
+npm install --save-dev webpack-dev-server
+
