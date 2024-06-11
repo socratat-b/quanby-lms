@@ -1,5 +1,5 @@
 {
-  "name": "dreamlms",
+  "name": "quanbylms",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -22,6 +22,7 @@
     "@angular/platform-browser-dynamic": "^17.3.2",
     "@angular/router": "^17.3.2",
     "@fortawesome/fontawesome-free": "^6.5.2",
+    "@supabase/supabase-js": "^2.43.4",
     "@types/quill": "^2.0.14",
     "angular-feather": "^6.5.0",
     "aos": "^2.3.4",
@@ -63,6 +64,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
+    "supabase": "^1.176.2",
     "typescript": "~5.4.3"
   }
 }

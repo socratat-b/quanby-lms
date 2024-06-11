@@ -9,7 +9,7 @@ import { NavigationEnd, Router, Event as RouterEvent } from '@angular/router';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'dreams-lms';
+  title = 'quanby-lms';
   public base = '';
   public page = '';
   public last = '';
@@ -18,12 +18,15 @@ export class AppComponent {
     this.common.base.subscribe((base: string) => {
       this.base = base;
     });
+
     this.common.page.subscribe((page: string) => {
       this.page = page;
     });
+
     this.common.last.subscribe((last: string) => {
       this.last = last;
     });
+
     this.Router.events.subscribe((data: RouterEvent) => {
       if (data instanceof NavigationEnd) {
         this.getRoutes(Router);
