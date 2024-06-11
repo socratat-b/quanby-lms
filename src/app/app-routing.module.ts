@@ -4,17 +4,24 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import('./modules/layout/layout.module').then((m) => m.LayoutModule),
+    loadChildren: () =>
+      import('./components/components.module').then((m) => m.ComponentsModule),
   },
   {
     path: 'auth',
-    loadChildren: () => import('./modules/auth/auth.module').then((m) => m.AuthModule),
+    loadChildren: () => import('./auth/auth.module').then((m) => m.AuthModule),
   },
+
   {
-    path: 'errors',
-    loadChildren: () => import('./modules/error/error.module').then((m) => m.ErrorModule),
+    path: 'error',
+    loadChildren: () =>
+      import('./error/error.module').then((m) => m.ErrorModule),
   },
-  { path: '**', redirectTo: 'errors/404' },
+  
+  {
+    path: '**',
+    redirectTo: 'error/404',
+  },
 ];
 
 @NgModule({
