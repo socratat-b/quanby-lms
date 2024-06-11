@@ -89,7 +89,7 @@ The Angular name and logos are trademarks of Google.
 sample
 
     ng generate directive|pipe|service|class|guard|interface|enum|module
-    
+
     if you want to create a modules this is the command: ng generate component {folder}/{module name}
 
     ```bash
@@ -104,4 +104,12 @@ sample
 
 [Vercel Deployment Demo](https://quanby-lms.vercel.app/)
 
-Fixing dependencies
+## Docker Command
+
+    After settings up the dockerfile
+
+    ```bash
+        docker build . -t quanby_lms
+        docker images
+        docker run -p 8080:80 quanby_lms
+    ```

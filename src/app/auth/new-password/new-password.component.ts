@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { DataService } from 'src/app/shared/service/data/data.service';
-import { passwordResponce, register } from 'src/app/models/register.model';
+import { passwordResponse, register } from 'src/app/models/register.model';
 import { routes } from 'src/app/shared/service/routes/routes';
 import { newPassword } from 'src/app/models/model';
 @Component({
@@ -30,8 +30,8 @@ export class NewPasswordComponent {
     password: '',
     confirmPassword: '',
   };
-  public passwordResponce: passwordResponce = {};
-  public confirmPasswordResponce: passwordResponce = {};
+  public passwordResponse: passwordResponse = {};
+  public confirmPasswordResponse: passwordResponse = {};
   public newPassword: newPassword[] = [];
 
   public newPasswordOwlOptions: OwlOptions = {
@@ -78,105 +78,105 @@ export class NewPasswordComponent {
   public onChangePassword(password: string, type: string) {
     if (type === 'Password') {
       if (password.match(/^$|\s+/)) {
-        this.passwordResponce.passwordResponceText =
+        this.passwordResponse.passwordResponseText =
           'whitespaces are not allowed';
-        this.passwordResponce.passwordResponceImage = '';
-        this.passwordResponce.passwordResponceKey = '';
+        this.passwordResponse.passwordResponseImage = '';
+        this.passwordResponse.passwordResponseKey = '';
         return;
       }
       if (password.length == 0) {
-        this.passwordResponce.passwordResponceText = '';
-        this.passwordResponce.passwordResponceImage = '';
-        this.passwordResponce.passwordResponceKey = '';
+        this.passwordResponse.passwordResponseText = '';
+        this.passwordResponse.passwordResponseImage = '';
+        this.passwordResponse.passwordResponseKey = '';
         return;
       }
       if (password.length < 8) {
-        this.passwordResponce.passwordResponceText =
+        this.passwordResponse.passwordResponseText =
           'Weak. Must contain at least 8 characters';
-        this.passwordResponce.passwordResponceImage =
+        this.passwordResponse.passwordResponseImage =
           'assets/img/icon/angry.svg';
-        this.passwordResponce.passwordResponceKey = '0';
+        this.passwordResponse.passwordResponseKey = '0';
       } else if (password.search(/[a-z]/) < 0) {
-        this.passwordResponce.passwordResponceText =
+        this.passwordResponse.passwordResponseText =
           'Average. Must contain at least 1 upper case and number';
-        this.passwordResponce.passwordResponceImage =
+        this.passwordResponse.passwordResponseImage =
           'assets/img/icon/anguish.svg';
-        this.passwordResponce.passwordResponceKey = '1';
+        this.passwordResponse.passwordResponseKey = '1';
       } else if (password.search(/[A-Z]/) < 0) {
-        this.passwordResponce.passwordResponceText =
+        this.passwordResponse.passwordResponseText =
           'Average. Must contain at least 1 upper case and number';
-        this.passwordResponce.passwordResponceImage =
+        this.passwordResponse.passwordResponseImage =
           'assets/img/icon/anguish.svg';
-        this.passwordResponce.passwordResponceKey = '1';
+        this.passwordResponse.passwordResponseKey = '1';
       } else if (password.search(/[0-9]/) < 0) {
-        this.passwordResponce.passwordResponceText =
+        this.passwordResponse.passwordResponseText =
           'Average. Must contain at least 1 upper case and number';
-        this.passwordResponce.passwordResponceImage =
+        this.passwordResponse.passwordResponseImage =
           'assets/img/icon/anguish.svg';
-        this.passwordResponce.passwordResponceKey = '1';
+        this.passwordResponse.passwordResponseKey = '1';
       } else if (password.search(/(?=.*?[#?!@$%^&*-])/) < 0) {
-        this.passwordResponce.passwordResponceText =
+        this.passwordResponse.passwordResponseText =
           'Almost. Must contain special symbol';
-        this.passwordResponce.passwordResponceImage =
+        this.passwordResponse.passwordResponseImage =
           'assets/img/icon/smile.svg';
-        this.passwordResponce.passwordResponceKey = '2';
+        this.passwordResponse.passwordResponseKey = '2';
       } else {
-        this.passwordResponce.passwordResponceText =
+        this.passwordResponse.passwordResponseText =
           'Awesome! You have a secure password.';
-        this.passwordResponce.passwordResponceImage =
+        this.passwordResponse.passwordResponseImage =
           'assets/img/icon/smile.svg';
-        this.passwordResponce.passwordResponceKey = '3';
+        this.passwordResponse.passwordResponseKey = '3';
       }
     } else {
       if (password.match(/^$|\s+/)) {
-        this.confirmPasswordResponce.passwordResponceText =
+        this.confirmPasswordResponse.passwordResponseText =
           'whitespaces are not allowed';
-        this.confirmPasswordResponce.passwordResponceImage = '';
-        this.confirmPasswordResponce.passwordResponceKey = '';
+        this.confirmPasswordResponse.passwordResponseImage = '';
+        this.confirmPasswordResponse.passwordResponseKey = '';
         return;
       }
       if (password.length == 0) {
-        this.confirmPasswordResponce.passwordResponceText = '';
-        this.confirmPasswordResponce.passwordResponceImage = '';
-        this.confirmPasswordResponce.passwordResponceKey = '';
+        this.confirmPasswordResponse.passwordResponseText = '';
+        this.confirmPasswordResponse.passwordResponseImage = '';
+        this.confirmPasswordResponse.passwordResponseKey = '';
         return;
       }
       if (password.length < 8) {
-        this.confirmPasswordResponce.passwordResponceText =
+        this.confirmPasswordResponse.passwordResponseText =
           'Weak. Must contain at least 8 characters';
-        this.confirmPasswordResponce.passwordResponceImage =
+        this.confirmPasswordResponse.passwordResponseImage =
           'assets/img/icon/angry.svg';
-        this.confirmPasswordResponce.passwordResponceKey = '0';
+        this.confirmPasswordResponse.passwordResponseKey = '0';
       } else if (password.search(/[a-z]/) < 0) {
-        this.confirmPasswordResponce.passwordResponceText =
+        this.confirmPasswordResponse.passwordResponseText =
           'Average. Must contain at least 1 upper case and number';
-        this.confirmPasswordResponce.passwordResponceImage =
+        this.confirmPasswordResponse.passwordResponseImage =
           'assets/img/icon/anguish.svg';
-        this.confirmPasswordResponce.passwordResponceKey = '1';
+        this.confirmPasswordResponse.passwordResponseKey = '1';
       } else if (password.search(/[A-Z]/) < 0) {
-        this.confirmPasswordResponce.passwordResponceText =
+        this.confirmPasswordResponse.passwordResponseText =
           'Average. Must contain at least 1 upper case and number';
-        this.confirmPasswordResponce.passwordResponceImage =
+        this.confirmPasswordResponse.passwordResponseImage =
           'assets/img/icon/anguish.svg';
-        this.confirmPasswordResponce.passwordResponceKey = '1';
+        this.confirmPasswordResponse.passwordResponseKey = '1';
       } else if (password.search(/[0-9]/) < 0) {
-        this.confirmPasswordResponce.passwordResponceText =
+        this.confirmPasswordResponse.passwordResponseText =
           'Average. Must contain at least 1 upper case and number';
-        this.confirmPasswordResponce.passwordResponceImage =
+        this.confirmPasswordResponse.passwordResponseImage =
           'assets/img/icon/anguish.svg';
-        this.confirmPasswordResponce.passwordResponceKey = '1';
+        this.confirmPasswordResponse.passwordResponseKey = '1';
       } else if (password.search(/(?=.*?[#?!@$%^&*-])/) < 0) {
-        this.confirmPasswordResponce.passwordResponceText =
+        this.confirmPasswordResponse.passwordResponseText =
           'Almost. Must contain special symbol';
-        this.confirmPasswordResponce.passwordResponceImage =
+        this.confirmPasswordResponse.passwordResponseImage =
           'assets/img/icon/smile.svg';
-        this.confirmPasswordResponce.passwordResponceKey = '2';
+        this.confirmPasswordResponse.passwordResponseKey = '2';
       } else {
-        this.confirmPasswordResponce.passwordResponceText =
+        this.confirmPasswordResponse.passwordResponseText =
           'Awesome! You have a secure password.';
-        this.confirmPasswordResponce.passwordResponceImage =
+        this.confirmPasswordResponse.passwordResponseImage =
           'assets/img/icon/smile.svg';
-        this.confirmPasswordResponce.passwordResponceKey = '3';
+        this.confirmPasswordResponse.passwordResponseKey = '3';
       }
     }
   }

@@ -14,9 +14,9 @@ export class ComponentsComponent {
   base = '';
   page = '';
   last = '';
-  public isuserHeader!: boolean;
+  public isUserHeader!: boolean;
   public isAdminHeader!: boolean;
-  public isstudentHeader!: boolean;
+  public isStudentHeader!: boolean;
   public mainFooter!: boolean;
   public routeStatus!: string;
   public routeStatusSub!: string;
@@ -46,16 +46,16 @@ export class ComponentsComponent {
     this.common.isAdminHeader.subscribe((res: boolean) => {
       this.isAdminHeader = res;
     });
-    this.common.isuserHeader.subscribe((res: boolean) => {
-      this.isuserHeader = res;
+    this.common.isUserHeader.subscribe((res: boolean) => {
+      this.isUserHeader = res;
     });
-    this.common.isstudentHeader.subscribe((res: boolean) => {
-      this.isstudentHeader = res;
+    this.common.isStudentHeader.subscribe((res: boolean) => {
+      this.isStudentHeader = res;
     });
     this.common.mainFooter.subscribe((res: boolean) => {
       this.mainFooter = res;
     });
-    this.sidebar.toogleSidebar.subscribe((res: string) => {
+    this.sidebar.toggleSidebar.subscribe((res: string) => {
       if (res == 'true') {
         this.showMiniSidebar = true;
       } else {
@@ -77,8 +77,8 @@ export class ComponentsComponent {
       this.routeStatus == 'home-three' ||
       this.routeStatus == 'home-four'
     ) {
-      this.common.isuserHeader.next(false);
-      this.common.isstudentHeader.next(false);
+      this.common.isUserHeader.next(false);
+      this.common.isStudentHeader.next(false);
       this.common.isAdminHeader.next(false);
       this.common.mainFooter.next(false);
     } else {
@@ -89,8 +89,8 @@ export class ComponentsComponent {
       this.routeStatus == 'pages' ||
       this.routeStatus == 'blog'
     ) {
-      this.common.isuserHeader.next(true);
-      this.common.isstudentHeader.next(false);
+      this.common.isUserHeader.next(true);
+      this.common.isStudentHeader.next(false);
       this.common.isAdminHeader.next(false);
     }
     if (
@@ -101,13 +101,13 @@ export class ComponentsComponent {
           this.routeStatusSub === 'checkout' ||
           this.routeStatusSub === 'purchase-history'))
     ) {
-      this.common.isuserHeader.next(false);
-      this.common.isstudentHeader.next(true);
+      this.common.isUserHeader.next(false);
+      this.common.isStudentHeader.next(true);
       this.common.isAdminHeader.next(false);
     }
     if (this.routeStatus == 'instructor') {
-      this.common.isuserHeader.next(false);
-      this.common.isstudentHeader.next(false);
+      this.common.isUserHeader.next(false);
+      this.common.isStudentHeader.next(false);
       this.common.isAdminHeader.next(true);
     }
   }

@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { registerFour } from 'src/app/models/model';
 import { DataService } from 'src/app/shared/service/data/data.service';
@@ -7,9 +7,9 @@ import { routes } from 'src/app/shared/service/routes/routes';
 @Component({
   selector: 'app-register-step-four',
   templateUrl: './register-step-four.component.html',
-  styleUrls: ['./register-step-four.component.scss']
+  styleUrls: ['./register-step-four.component.scss'],
 })
-export class RegisterStepFourComponent  {
+export class RegisterStepFourComponent {
   public registerFour: registerFour[] = [];
   public routes = routes;
 
@@ -18,22 +18,19 @@ export class RegisterStepFourComponent  {
     nav: true,
     loop: true,
     responsive: {
-        0: {
-          items: 1
-        },
-        768 : {
-          items: 3
-        },
-        1170: {
-          items: 4
-        }
+      0: {
+        items: 1,
+      },
+      768: {
+        items: 3,
+      },
+      1170: {
+        items: 4,
+      },
     },
   };
 
   constructor(private DataService: DataService) {
     this.registerFour = this.DataService.registerFour;
   }
-
- 
-
 }

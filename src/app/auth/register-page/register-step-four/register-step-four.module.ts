@@ -6,13 +6,7 @@ import { RegisterStepFourComponent } from './register-step-four.component';
 import { SharedModule } from 'src/app/shared/module/shared.module';
 
 @NgModule({
-  declarations: [
-    RegisterStepFourComponent
-  ],
-  imports: [
-    CommonModule,
-    RegisterStepFourRoutingModule,
-    SharedModule
-  ]
+  declarations: [RegisterStepFourComponent],
+  imports: [CommonModule, RegisterStepFourRoutingModule, SharedModule],
 })
-export class RegisterStepFourModule { }
+export class RegisterStepFourModule {}

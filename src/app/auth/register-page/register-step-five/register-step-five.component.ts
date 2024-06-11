@@ -7,9 +7,9 @@ import { registerFive } from 'src/app/models/model';
 @Component({
   selector: 'app-register-step-five',
   templateUrl: './register-step-five.component.html',
-  styleUrls: ['./register-step-five.component.scss']
+  styleUrls: ['./register-step-five.component.scss'],
 })
-export class RegisterStepFiveComponent  {
+export class RegisterStepFiveComponent {
   public registerFive: registerFive[] = [];
   public routes = routes;
   public registerFiveOwlOptions: OwlOptions = {
@@ -17,21 +17,19 @@ export class RegisterStepFiveComponent  {
     nav: true,
     loop: true,
     responsive: {
-        0: {
-          items: 1
-        },
-        768 : {
-          items: 3
-        },
-        1170: {
-          items: 4
-        }
+      0: {
+        items: 1,
+      },
+      768: {
+        items: 3,
+      },
+      1170: {
+        items: 4,
+      },
     },
   };
 
   constructor(private DataService: DataService) {
     this.registerFive = this.DataService.registerFive;
   }
-
-
 }

@@ -12,7 +12,7 @@ import { welcomeLogin } from 'src/app/models/model';
 })
 export class LoginComponent {
   public routes = routes;
-  password= 'password';
+  password = 'password';
   show = true;
 
   public welcomeLogin: welcomeLogin[] = [];
@@ -22,23 +22,21 @@ export class LoginComponent {
     nav: true,
     loop: true,
     responsive: {
-        0: {
-          items: 1
-        },
-        768 : {
-          items: 3
-        },
-        1170: {
-          items: 4
-        }
+      0: {
+        items: 1,
+      },
+      768: {
+        items: 3,
+      },
+      1170: {
+        items: 4,
+      },
     },
   };
 
   constructor(private DataService: DataService, public router: Router) {
     this.welcomeLogin = this.DataService.welcomeLogin;
   }
-
-
 
   onClick() {
     if (this.password === 'password') {

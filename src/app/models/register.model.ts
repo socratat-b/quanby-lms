@@ -9,8 +9,8 @@ export class register {
   paragraph?: string;
 }
 
-export class passwordResponce {
-  passwordResponceText?: string;
-  passwordResponceImage?: string;
-  passwordResponceKey?: string;
+export class passwordResponse {
+  passwordResponseText?: string;
+  passwordResponseImage?: string;
+  passwordResponseKey?: string;
 }

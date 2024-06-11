@@ -6,16 +6,13 @@ import { VerificationCodeComponent } from './verification-code.component';
 import { FormsModule } from '@angular/forms';
 import { SharedModule } from 'src/app/shared/module/shared.module';
 
-
 @NgModule({
-  declarations: [
-    VerificationCodeComponent
-  ],
+  declarations: [VerificationCodeComponent],
   imports: [
     CommonModule,
     VerificationCodeRoutingModule,
     FormsModule,
-    SharedModule
-  ]
+    SharedModule,
+  ],
 })
-export class VerificationCodeModule { }
+export class VerificationCodeModule {}

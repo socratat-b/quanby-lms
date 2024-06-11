@@ -17,7 +17,8 @@
           <li class="page-item" [ngClass]="{
               disabled: currentPage === 1
             }">
-            <a (click)="getMoreData('previous')" (keydown)="getMoreData('previous')" tabindex="1" class="page-link">Previous</a>
+            <a (click)="getMoreData('previous')" (keydown)="getMoreData('previous')" tabindex="1"
+              class="page-link">Previous</a>
 
           </li>
 
@@ -38,7 +39,8 @@
             </a>
           </li>
           @if (i === 0 && pageNumberArray.length > 6 && currentPage > 2) {
-          <li class="page-item" [hidden]="currentPage === 1" (click)="moveToPage(currentPage - 2)" (keydown)="moveToPage(currentPage - 2)" tabindex="1">
+          <li class="page-item" [hidden]="currentPage === 1" (click)="moveToPage(currentPage - 2)"
+            (keydown)="moveToPage(currentPage - 2)" tabindex="1">
             <a class="page-link" href="javascript:void(0);"> ... </a>
           </li>
           }
@@ -48,7 +50,8 @@
           <li [hidden]="
                 currentPage >= pageNumberArray[pageNumberArray.length - 2] ||
                 totalData < serialNumberArray[serialNumberArray.length - 1]
-              " class="page-item" (click)="moveToPage(currentPage + 2)" (keydown)="moveToPage(currentPage + 2)" tabindex="1">
+              " class="page-item" (click)="moveToPage(currentPage + 2)" (keydown)="moveToPage(currentPage + 2)"
+            tabindex="1">
             <a class="page-link" href="javascript:void(0);"> ... </a>
           </li>
           }
@@ -59,7 +62,7 @@
                 currentPage === pageNumberArray[pageNumberArray.length - 1] ||
                 tableData.length === 0
             }">
-            <a (click)="getMoreData('next')" (keydown)="getMoreData('next')" tabindex="1" class="page-link" >Next</a>
+            <a (click)="getMoreData('next')" (keydown)="getMoreData('next')" tabindex="1" class="page-link">Next</a>
           </li>
         </ul>
       </div>

@@ -9,13 +9,13 @@ export class CommonService {
   public page: BehaviorSubject<string> = new BehaviorSubject<string>('');
   public last: BehaviorSubject<string> = new BehaviorSubject<string>('');
 
-  public isuserHeader: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(
+  public isUserHeader: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(
     true
   );
   public isAdminHeader: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(
     false
   );
-  public isstudentHeader: BehaviorSubject<boolean> =
+  public isStudentHeader: BehaviorSubject<boolean> =
     new BehaviorSubject<boolean>(false);
   public mainFooter: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(
     true
