@@ -9,14 +9,14 @@
     'chat-wrapper': page === 'instructor-chat' || 'student-message',
   }"
   >
-  @if (isuserHeader === true) {
+  @if (isUserHeader === true) {
     <app-header></app-header>
   }
 
   @if (isAdminHeader) {
     <app-admin-header></app-admin-header>
   }
-  @if (isstudentHeader === true) {
+  @if (isStudentHeader === true) {
     <app-student-header></app-student-header>
   }
   <div>

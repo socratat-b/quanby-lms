@@ -8,9 +8,9 @@ import { routes } from 'src/app/shared/service/routes/routes';
 @Component({
   selector: 'app-register-step-two',
   templateUrl: './register-step-two.component.html',
-  styleUrls: ['./register-step-two.component.scss']
+  styleUrls: ['./register-step-two.component.scss'],
 })
-export class RegisterStepTwoComponent  {
+export class RegisterStepTwoComponent {
   public registerTwo: registerTwo[] = [];
   public routes = routes;
 
@@ -19,24 +19,23 @@ export class RegisterStepTwoComponent  {
     nav: true,
     loop: true,
     responsive: {
-        0: {
-          items: 1
-        },
-        768 : {
-          items: 3
-        },
-        1170: {
-          items: 4
-        }
+      0: {
+        items: 1,
+      },
+      768: {
+        items: 3,
+      },
+      1170: {
+        items: 4,
+      },
     },
   };
 
-  constructor(private DataService: DataService,public router: Router) {
+  constructor(private DataService: DataService, public router: Router) {
     this.registerTwo = this.DataService.registerTwo;
   }
 
-
-directPath() {
-  this.router.navigate(['/auth/register-page/register-step-three']);
-}
+  directPath() {
+    this.router.navigate(['/auth/register-page/register-step-three']);
+  }
 }

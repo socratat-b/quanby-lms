@@ -8,16 +8,16 @@ import { routes } from 'src/app/shared/service/routes/routes';
 @Component({
   selector: 'app-verification-code',
   templateUrl: './verification-code.component.html',
-  styleUrls: ['./verification-code.component.scss']
+  styleUrls: ['./verification-code.component.scss'],
 })
-export class VerificationCodeComponent  {
+export class VerificationCodeComponent {
   public verificationCode: verificationCode[] = [];
   public routes = routes;
   public oneTimePassword = {
-    data1: "",
-    data2: "",
-    data3: "",
-    data4: ""
+    data1: '',
+    data2: '',
+    data3: '',
+    data4: '',
   };
   public verificationCodeOwlOptions: OwlOptions = {
     margin: 24,
@@ -44,10 +44,10 @@ export class VerificationCodeComponent  {
     } else if (box == 'digit-3' && data.length > 0) {
       document.getElementById('digit-4')?.focus();
     } else {
-      return
+      return;
     }
   }
-  public tiggerBackspace(data: string | null, box: string) {
+  public triggerBackspace(data: string | null, box: string) {
     let StringyfyData: string | null;
     if (data) {
       StringyfyData = data.toString();
@@ -63,8 +63,7 @@ export class VerificationCodeComponent  {
     }
   }
 
-
-  constructor(private DataService: DataService,public router: Router) {
+  constructor(private DataService: DataService, public router: Router) {
     this.verificationCode = this.DataService.verificationCode;
   }
 

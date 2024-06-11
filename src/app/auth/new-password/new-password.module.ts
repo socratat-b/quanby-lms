@@ -7,17 +7,14 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { FormsModule } from '@angular/forms';
 import { FeatherIconModule } from 'src/app/shared/module/feather.module';
 
-
 @NgModule({
-  declarations: [
-    NewPasswordComponent
-  ],
+  declarations: [NewPasswordComponent],
   imports: [
     CommonModule,
     NewPasswordRoutingModule,
     CarouselModule,
     FormsModule,
-    FeatherIconModule
+    FeatherIconModule,
   ],
 })
-export class NewPasswordModule { }
+export class NewPasswordModule {}

@@ -9,11 +9,11 @@ const routes: Routes = [
     children: [
       { path: '', redirectTo: 'home', pathMatch: 'full' },
 
-      {
-        path: 'blog',
-        loadChildren: () =>
-          import('./blog/blog.module').then((m) => m.BlogModule),
-      },
+      // {
+      //   path: 'blog',
+      //   loadChildren: () =>
+      //     import('./blog/blog.module').then((m) => m.BlogModule),
+      // },
       {
         path: 'instructor',
         loadChildren: () =>

@@ -8,9 +8,8 @@ describe('VerificationCodeComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ VerificationCodeComponent ]
-    })
-    .compileComponents();
+      declarations: [VerificationCodeComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(VerificationCodeComponent);
     component = fixture.componentInstance;

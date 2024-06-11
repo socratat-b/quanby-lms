@@ -1124,7 +1124,7 @@ export interface instructorWithdraw {
   requestedOn: string;
   time: string;
   amount: number;
-  status:string;
+  status: string;
   id: number;
   date: string;
 }

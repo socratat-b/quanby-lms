@@ -1,6 +1,6 @@
 /*
 Author       : Dreamguys
-Template Name: Dreams LMS - Bootstrap Template
+Template Name: Quanby LMS - Bootstrap Template
 Version      : 1.0
 */
 
@@ -17843,12 +17843,12 @@ input[type="password"]::-ms-clear {
   -webkit-align-items: flex-start;
   flex-shrink: 0;
 }
-.main-chat-blk .dreams_chat {
+.main-chat-blk .quanby_chat {
   width: 40px;
   height: 40px;
   object-fit: cover;
 }
-.main-chat-blk .dreams_chat {
+.main-chat-blk .quanby_chat {
   width: 32px;
   height: 32px;
   object-fit: cover;

@@ -334,7 +334,7 @@ export class routes {
   }
 
   // Blog routes
-  
+
   public static get blog(): string {
     return this.baseUrl + '/blog/';
   }

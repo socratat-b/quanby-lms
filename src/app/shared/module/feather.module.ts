@@ -41,7 +41,7 @@ import {
   Twitter,
   Instagram,
   Linkedin,
-  Youtube
+  Youtube,
 } from 'angular-feather/icons';
 
 const icons = {
@@ -85,8 +85,7 @@ const icons = {
   Twitter,
   Instagram,
   Linkedin,
-  Youtube
-  
+  Youtube,
 };
 
 @NgModule({

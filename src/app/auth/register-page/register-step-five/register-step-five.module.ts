@@ -6,13 +6,7 @@ import { RegisterStepFiveComponent } from './register-step-five.component';
 import { SharedModule } from 'src/app/shared/module/shared.module';
 
 @NgModule({
-  declarations: [
-    RegisterStepFiveComponent
-  ],
-  imports: [
-    CommonModule,
-    RegisterStepFiveRoutingModule,
-    SharedModule,
-  ]
+  declarations: [RegisterStepFiveComponent],
+  imports: [CommonModule, RegisterStepFiveRoutingModule, SharedModule],
 })
-export class RegisterStepFiveModule { }
+export class RegisterStepFiveModule {}

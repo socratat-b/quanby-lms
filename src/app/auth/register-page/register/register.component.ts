@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { DataService } from 'src/app/shared/service/data/data.service';
 import { OwlOptions } from 'ngx-owl-carousel-o';
-import { passwordResponce, register } from 'src/app/models/register.model';
+import { passwordResponse, register } from 'src/app/models/register.model';
 import { routes } from 'src/app/shared/service/routes/routes';
 
 @Component({
@@ -17,7 +17,7 @@ export class RegisterComponent  {
     content2: undefined,
     paragraph: undefined
   }
-  public passwordResponce:passwordResponce={};
+  public passwordResponse:passwordResponse={};
 
   public register: register[] = [];
 
@@ -66,41 +66,41 @@ export class RegisterComponent  {
  
   public onChangePassword(password:string){
     if(password.match(/^$|\s+/)) {
-      this.passwordResponce.passwordResponceText = "whitespaces are not allowed"
-      this.passwordResponce.passwordResponceImage = ""
-      this.passwordResponce.passwordResponceKey = ''
+      this.passwordResponse.passwordResponseText = "whitespaces are not allowed"
+      this.passwordResponse.passwordResponseImage = ""
+      this.passwordResponse.passwordResponseKey = ''
       return
     }
     if(password.length == 0){
-      this.passwordResponce.passwordResponceText = ""
-      this.passwordResponce.passwordResponceImage = ""
-      this.passwordResponce.passwordResponceKey = ''
+      this.passwordResponse.passwordResponseText = ""
+      this.passwordResponse.passwordResponseImage = ""
+      this.passwordResponse.passwordResponseKey = ''
       return
     }
     if (password.length < 8) {
-      this.passwordResponce.passwordResponceText = "Weak. Must contain at least 8 characters"
-      this.passwordResponce.passwordResponceImage = "assets/img/icon/angry.svg"
-      this.passwordResponce.passwordResponceKey = '0'
+      this.passwordResponse.passwordResponseText = "Weak. Must contain at least 8 characters"
+      this.passwordResponse.passwordResponseImage = "assets/img/icon/angry.svg"
+      this.passwordResponse.passwordResponseKey = '0'
     } else if (password.search(/[a-z]/) < 0) {
-      this.passwordResponce.passwordResponceText = "Average. Must contain at least 1 upper case and number"
-      this.passwordResponce.passwordResponceImage = "assets/img/icon/anguish.svg"
-      this.passwordResponce.passwordResponceKey = '1'
+      this.passwordResponse.passwordResponseText = "Average. Must contain at least 1 upper case and number"
+      this.passwordResponse.passwordResponseImage = "assets/img/icon/anguish.svg"
+      this.passwordResponse.passwordResponseKey = '1'
     } else if(password.search(/[A-Z]/) < 0) {
-      this.passwordResponce.passwordResponceText = "Average. Must contain at least 1 upper case and number"
-      this.passwordResponce.passwordResponceImage = "assets/img/icon/anguish.svg"
-      this.passwordResponce.passwordResponceKey = '1'
+      this.passwordResponse.passwordResponseText = "Average. Must contain at least 1 upper case and number"
+      this.passwordResponse.passwordResponseImage = "assets/img/icon/anguish.svg"
+      this.passwordResponse.passwordResponseKey = '1'
     } else  if (password.search(/[0-9]/) < 0) {
-      this.passwordResponce.passwordResponceText= "Average. Must contain at least 1 upper case and number"
-      this.passwordResponce.passwordResponceImage = "assets/img/icon/anguish.svg"
-      this.passwordResponce.passwordResponceKey = '1'
+      this.passwordResponse.passwordResponseText= "Average. Must contain at least 1 upper case and number"
+      this.passwordResponse.passwordResponseImage = "assets/img/icon/anguish.svg"
+      this.passwordResponse.passwordResponseKey = '1'
     } else  if (password.search(/(?=.*?[#?!@$%^&*-])/) < 0) {
-      this.passwordResponce.passwordResponceText = "Almost. Must contain special symbol"
-      this.passwordResponce.passwordResponceImage = "assets/img/icon/smile.svg"
-      this.passwordResponce.passwordResponceKey = '2'
+      this.passwordResponse.passwordResponseText = "Almost. Must contain special symbol"
+      this.passwordResponse.passwordResponseImage = "assets/img/icon/smile.svg"
+      this.passwordResponse.passwordResponseKey = '2'
     }else {
-      this.passwordResponce.passwordResponceText = "Awesome! You have a secure password."
-        this.passwordResponce.passwordResponceImage = "assets/img/icon/smile.svg"
-         this.passwordResponce.passwordResponceKey = '3'
+      this.passwordResponse.passwordResponseText = "Awesome! You have a secure password."
+        this.passwordResponse.passwordResponseImage = "assets/img/icon/smile.svg"
+         this.passwordResponse.passwordResponseKey = '3'
      }
   }
   typingStarted = false;

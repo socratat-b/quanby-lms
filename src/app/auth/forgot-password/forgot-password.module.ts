@@ -6,13 +6,7 @@ import { ForgotPasswordComponent } from './forgot-password.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 
 @NgModule({
-  declarations: [
-    ForgotPasswordComponent
-  ],
-  imports: [
-    CommonModule,
-    ForgotPasswordRoutingModule,
-    CarouselModule
-  ]
+  declarations: [ForgotPasswordComponent],
+  imports: [CommonModule, ForgotPasswordRoutingModule, CarouselModule],
 })
-export class ForgotPasswordModule { }
+export class ForgotPasswordModule {}
