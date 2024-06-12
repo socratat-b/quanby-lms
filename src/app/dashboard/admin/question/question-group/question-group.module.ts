@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { EnroleesRoutingModule } from './enrolees-routing.module';
+import { QuestionGroupRoutingModule } from './question-group-routing.module';
 
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
-    EnroleesRoutingModule
+    QuestionGroupRoutingModule
   ]
 })
-export class EnroleesModule { }
+export class QuestionGroupModule { }
