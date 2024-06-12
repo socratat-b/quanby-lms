@@ -392,7 +392,7 @@ export class routes {
   public static get error_500(): string {
     return this.error + '500';
   }
-  public static get comming_soon(): string {
+  public static get coming_soon(): string {
     return this.error + 'come-soon';
   }
   public static get error_404(): string {
@@ -414,9 +414,433 @@ export class routes {
     return this.baseUrl + '/home-four';
   }
 
-  // Joemar Routes
+  // Admin Dashboard Routes
 
-  public static get dashboard(): string {
+  public static get admin_dashboard(): string {
     return this.baseUrl + '/dashboard';
+  }
+
+  public static get media_manager(): string {
+    return this.admin_dashboard + '/media-manager';
+  }
+
+  public static get media_manager_create(): string {
+    return this.admin_dashboard + '/media-manager/create';
+  }
+
+  public static get media_manager_settings(): string {
+    return this.admin_dashboard + '/media-manager/settings';
+  }
+
+  public static get users_instructors(): string {
+    return this.admin_dashboard + '/users/instructors';
+  }
+
+  public static get users_instructors_payout(): string {
+    return this.admin_dashboard + '/users/instructors/payout';
+  }
+
+  public static get users_students(): string {
+    return this.admin_dashboard + '/users/students';
+  }
+
+  public static get users_staffs(): string {
+    return this.admin_dashboard + '/users/staffs';
+  }
+
+  public static get users_roles(): string {
+    return this.admin_dashboard + '/users/roles';
+  }
+
+  public static get users_delete_account_requests(): string {
+    return this.admin_dashboard + '/users/delete-account-requests';
+  }
+
+  public static get departments(): string {
+    return this.admin_dashboard + '/departments';
+  }
+
+  public static get courses_categories(): string {
+    return this.admin_dashboard + '/courses/categories';
+  }
+
+  public static get courses_levels(): string {
+    return this.admin_dashboard + '/courses/levels';
+  }
+
+  public static get courses_settings(): string {
+    return this.admin_dashboard + '/courses/settings';
+  }
+
+  public static get courses_subjects(): string {
+    return this.admin_dashboard + '/courses/subjects';
+  }
+
+  public static get quizzes_question_groups(): string {
+    return this.admin_dashboard + '/quizzes/question-groups';
+  }
+
+  public static get quizzes_question_banks(): string {
+    return this.admin_dashboard + '/quizzes/question-banks';
+  }
+
+  public static get quizzes_setups(): string {
+    return this.admin_dashboard + '/quizzes/setups';
+  }
+
+  public static get quizzes_results(): string {
+    return this.admin_dashboard + '/quizzes/results';
+  }
+
+  public static get virtual_classes(): string {
+    return this.admin_dashboard + '/virtual-classes';
+  }
+
+  public static get zoom_settings(): string {
+    return this.admin_dashboard + '/zoom-settings';
+  }
+
+  public static get certificates(): string {
+    return this.admin_dashboard + '/certificates';
+  }
+
+  public static get certificates_fonts(): string {
+    return this.admin_dashboard + '/certificates/fonts';
+  }
+
+  public static get certificates_settings(): string {
+    return this.admin_dashboard + '/certificates/settings';
+  }
+
+  public static get revenue(): string {
+    return this.admin_dashboard + '/revenue';
+  }
+
+  public static get revenue_instructors(): string {
+    return this.admin_dashboard + '/revenue/instructors';
+  }
+
+  public static get revenue_statistics(): string {
+    return this.admin_dashboard + '/revenue/statistics';
+  }
+
+  public static get enrollments(): string {
+    return this.admin_dashboard + '/enrollments';
+  }
+
+  public static get enrollments_refund_n_cancellation(): string {
+    return this.admin_dashboard + '/enrollments/refund-n-cancellation';
+  }
+
+  public static get enrollments_refund_settings(): string {
+    return this.admin_dashboard + '/enrollments/refund-settings';
+  }
+
+  public static get communication_notifications(): string {
+    return this.admin_dashboard + '/communication/notifications';
+  }
+
+  public static get communication_private_messages(): string {
+    return this.admin_dashboard + '/communication/private-messages';
+  }
+
+  public static get coupons_manage(): string {
+    return this.admin_dashboard + '/coupons/manage';
+  }
+
+  public static get coupons_single(): string {
+    return this.admin_dashboard + '/coupons/single';
+  }
+
+  public static get coupons_personalized(): string {
+    return this.admin_dashboard + '/coupons/personalized';
+  }
+
+  public static get coupons_invite_code(): string {
+    return this.admin_dashboard + '/coupons/invite-code';
+  }
+
+  public static get coupons_invite_settings(): string {
+    return this.admin_dashboard + '/coupons/invite-settings';
+  }
+
+  public static get payment_online(): string {
+    return this.admin_dashboard + '/payment/online';
+  }
+
+  public static get payment_offline(): string {
+    return this.admin_dashboard + '/payment/offline';
+  }
+
+  public static get payment_bank(): string {
+    return this.admin_dashboard + '/payment/bank';
+  }
+
+  public static get payment_commission(): string {
+    return this.admin_dashboard + '/payment/commission';
+  }
+
+  public static get blogs(): string {
+    return this.admin_dashboard + '/blogs';
+  }
+
+  public static get blogs_comments(): string {
+    return this.admin_dashboard + '/blogs/comments';
+  }
+
+  public static get questions(): string {
+    return this.admin_dashboard + '/questions';
+  }
+
+  public static get questions_settings(): string {
+    return this.admin_dashboard + '/questions/settings';
+  }
+
+  public static get cmo_header_menu(): string {
+    return this.admin_dashboard + '/cmo/header-menu';
+  }
+
+  public static get cmo_menu_settings(): string {
+    return this.admin_dashboard + '/cmo/menu-settings';
+  }
+
+  public static get cmo_sliders(): string {
+    return this.admin_dashboard + '/cmo/sliders';
+  }
+
+  public static get cmo_sliders_settings(): string {
+    return this.admin_dashboard + '/cmo/sliders/settings';
+  }
+
+  public static get cmo_page_content(): string {
+    return this.admin_dashboard + '/cmo/page-content';
+  }
+
+  public static get cmo_testimonials(): string {
+    return this.admin_dashboard + '/cmo/testimonials';
+  }
+
+  public static get cmo_social_settings(): string {
+    return this.admin_dashboard + '/cmo/social-settings';
+  }
+
+  public static get cmo_pages(): string {
+    return this.admin_dashboard + '/cmo/pages';
+  }
+
+  public static get cmo_become_instructor(): string {
+    return this.admin_dashboard + '/cmo/become-instructor';
+  }
+
+  public static get cmo_sponsors(): string {
+    return this.admin_dashboard + '/cmo/sponsors';
+  }
+
+  public static get cmo_popup_content(): string {
+    return this.admin_dashboard + '/cmo/popup-content';
+  }
+
+  public static get cmo_footer_settings(): string {
+    return this.admin_dashboard + '/cmo/footer-settings';
+  }
+
+  public static get cmo_login_page(): string {
+    return this.admin_dashboard + '/cmo/login-page';
+  }
+
+  public static get cmo_faq(): string {
+    return this.admin_dashboard + '/cmo/faq';
+  }
+
+  public static get cmo_header_footer_style(): string {
+    return this.admin_dashboard + '/cmo/header-footer-style';
+  }
+
+  public static get gamification(): string {
+    return this.admin_dashboard + '/gamification';
+  }
+
+  public static get gamification_badges(): string {
+    return this.admin_dashboard + '/gamification/badges';
+  }
+
+  public static get gamification_history(): string {
+    return this.admin_dashboard + '/gamification/history';
+  }
+
+  public static get settings_system(): string {
+    return this.admin_dashboard + '/settings/system';
+  }
+
+  public static get settings_api(): string {
+    return this.admin_dashboard + '/settings/api';
+  }
+
+  public static get settings_sms(): string {
+    return this.admin_dashboard + '/settings/sms';
+  }
+
+  public static get settings_vimeo(): string {
+    return this.admin_dashboard + '/settings/vimeo';
+  }
+
+  public static get settings_vdocipher(): string {
+    return this.admin_dashboard + '/settings/vdocipher';
+  }
+
+  public static get settings_localization(): string {
+    return this.admin_dashboard + '/settings/localization';
+  }
+
+  public static get settings_module_manager(): string {
+    return this.admin_dashboard + '/settings/module-manager';
+  }
+
+  public static get settings_sidebar_manager(): string {
+    return this.admin_dashboard + '/settings/sidebar-manager';
+  }
+
+  public static get settings_themes(): string {
+    return this.admin_dashboard + '/settings/themes';
+  }
+
+  public static get settings_themes_customize(): string {
+    return this.admin_dashboard + '/settings/themes-customize';
+  }
+
+  public static get settings_themes_font(): string {
+    return this.admin_dashboard + '/settings/themes-font';
+  }
+
+  public static get settings_newsletter(): string {
+    return this.admin_dashboard + '/settings/newsletter';
+  }
+
+  public static get settings_newsletter_mailchimp(): string {
+    return this.admin_dashboard + '/settings/newsletter/mailchimp';
+  }
+
+  public static get settings_newsletter_get_response(): string {
+    return this.admin_dashboard + '/settings/newsletter/get-response';
+  }
+
+  public static get settings_newsletter_acelle(): string {
+    return this.admin_dashboard + '/settings/newsletter/acelle';
+  }
+
+  public static get settings_newsletter_subscriber(): string {
+    return this.admin_dashboard + '/settings/newsletter/subscriber';
+  }
+
+  public static get settings_push_notification(): string {
+    return this.admin_dashboard + '/settings/push-notification';
+  }
+
+  public static get settings_utilities(): string {
+    return this.admin_dashboard + '/settings/utilities';
+  }
+
+  public static get settings_preloader(): string {
+    return this.admin_dashboard + '/settings/preloader';
+  }
+
+  public static get settings_geo_location(): string {
+    return this.admin_dashboard + '/settings/geo-location';
+  }
+
+  public static get settings_error_log(): string {
+    return this.admin_dashboard + '/settings/error-log';
+  }
+
+  public static get settings_ip_block(): string {
+    return this.admin_dashboard + '/settings/ip-block';
+  }
+
+  public static get settings_maintenance(): string {
+    return this.admin_dashboard + '/settings/maintenance';
+  }
+
+  public static get settings_update_system(): string {
+    return this.admin_dashboard + '/settings/update-system';
+  }
+
+  public static get settings_city(): string {
+    return this.admin_dashboard + '/settings/city';
+  }
+
+  public static get settings_cache(): string {
+    return this.admin_dashboard + '/settings/cache';
+  }
+
+  public static get settings_queue(): string {
+    return this.admin_dashboard + '/settings/queue';
+  }
+
+  public static get settings_cron_job(): string {
+    return this.admin_dashboard + '/settings/cron-job';
+  }
+
+  public static get settings_captcha(): string {
+    return this.admin_dashboard + '/settings/captcha';
+  }
+
+  public static get settings_social_login(): string {
+    return this.admin_dashboard + '/settings/social-login';
+  }
+
+  public static get settings_payout_accounts(): string {
+    return this.admin_dashboard + '/settings/payout-accounts';
+  }
+
+  public static get settings_cookie(): string {
+    return this.admin_dashboard + '/settings/cookie';
+  }
+
+  public static get settings_analytics(): string {
+    return this.admin_dashboard + '/settings/analytics';
+  }
+
+  public static get settings_pusher(): string {
+    return this.admin_dashboard + '/settings/pusher';
+  }
+
+  public static get settings_gdrive(): string {
+    return this.admin_dashboard + '/settings/gdrive';
+  }
+
+  public static get settings_seo(): string {
+    return this.admin_dashboard + '/settings/seo';
+  }
+
+  public static get settings_currencies(): string {
+    return this.admin_dashboard + '/settings/currencies';
+  }
+
+  public static get settings_timezone(): string {
+    return this.admin_dashboard + '/settings/timezone';
+  }
+
+  public static get settings_activation(): string {
+    return this.admin_dashboard + '/settings/activation';
+  }
+
+  public static get settings_general(): string {
+    return this.admin_dashboard + '/settings/general';
+  }
+
+  public static get settings_email(): string {
+    return this.admin_dashboard + '/settings/email';
+  }
+
+  public static get settings_email_template(): string {
+    return this.admin_dashboard + '/settings/email-template';
+  }
+
+  public static get settings_payout(): string {
+    return this.admin_dashboard + '/settings/payout';
+  }
+
+  public static get settings_backup(): string {
+    return this.admin_dashboard + '/settings/backup';
   }
 }
