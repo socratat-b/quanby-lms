@@ -8,13 +8,13 @@
 
 <p align="center">
     <a href="https://github.com/Quanby-IT-Solutions/quanby-lms/stargazers">
-        <img height="24" src="https://img.shields.io/github/stars/luciano-work/angular-tailwind?colorA=1e1e28&colorB=c9cbff&style=for-the-badge">
+        <img height="24" src="https://img.shields.io/github/stars/Quanby-IT-Solutions/quanby-lms?colorA=1e1e28&colorB=c9cbff&style=for-the-badge">
     </a>
     <a href="https://github.com/Quanby-IT-Solutions/quanby-lms/issues">
-        <img height="24" src="https://img.shields.io/github/issues/luciano-work/angular-tailwind?colorA=1e1e28&colorB=f7be95&style=for-the-badge">
+        <img height="24" src="https://img.shields.io/github/issues/Quanby-IT-Solutions/quanby-lms?colorA=1e1e28&colorB=f7be95&style=for-the-badge">
     </a>
     <a href="https://github.com/Quanby-IT-Solutions/quanby-lms/contributors">
-        <img height="24" src="https://img.shields.io/github/contributors/luciano-work/angular-tailwind?colorA=1e1e28&colorB=b1e1a6&style=for-the-badge">
+        <img height="24" src="https://img.shields.io/github/contributors/Quanby-IT-Solutions/quanby-lms?colorA=1e1e28&colorB=b1e1a6&style=for-the-badge">
     </a>
 </p>
 
