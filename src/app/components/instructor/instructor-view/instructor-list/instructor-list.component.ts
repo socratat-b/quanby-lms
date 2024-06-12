@@ -111,9 +111,15 @@ public getMoreData(event: string): void {
       this.pageSelection.push({ skip: skip, limit: limit });
     }
     }
+    trackByFn(index: number, item: any): number {
+      return item.id; // Assuming each item in `instructorList` has a unique `id` property
+    }
+    
 
 }
 export interface pageSelection {
   skip: number;
   limit: number;
 }
+
+

@@ -96,6 +96,10 @@ export class InstructorGridComponent implements OnInit {
     this.currentPage = 1;
     this.getinstructorGrid();
   }
+  trackByFn(index: number, item: any): number {
+    return item.id; // Assuming each item in `instructorGrid` has a unique `id` property
+  }
+  
 
   private calculateTotalPages(totalData: number, pageSize: number): void {
     this.pageNumberArray = [];
