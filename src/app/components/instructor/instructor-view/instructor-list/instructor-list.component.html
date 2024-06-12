@@ -70,7 +70,7 @@
         <div class="row">
 
           <!-- Instructor List -->
-          <ng-container *ngFor="let data of instructorList; trackBy: trackByFn">
+          @for (data of instructorList; track trackByFn($index, data)) {
             <div class="col-lg-12 d-flex">
               <div class="instructor-list flex-fill">
                 <div class="instructor-img">
@@ -112,7 +112,7 @@
                 </div>
               </div>
             </div>
-          </ng-container>
+          }
           <!-- /Instructor List -->
 
         </div>

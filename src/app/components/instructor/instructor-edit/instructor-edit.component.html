@@ -70,16 +70,18 @@
               <h5>Education</h5>
               <a href="#"><i class="fa-regular fa-pen-to-square"></i></a>
             </div>
-            <div *ngFor="let data of instructorEditEducation">
+            @for (data of instructorEditEducation; track data) {
               <div>
-                <div><span>{{ data.letter }}</span></div>
                 <div>
-                  <h6>{{ data.heading }}</h6>
-                  <p>{{ data.paragraph }}</p>
-                  <p>{{ data.content }}</p>
+                  <div><span>{{ data.letter }}</span></div>
+                  <div>
+                    <h6>{{ data.heading }}</h6>
+                    <p>{{ data.paragraph }}</p>
+                    <p>{{ data.content }}</p>
+                  </div>
                 </div>
               </div>
-            </div>
+            }
           </div>
         </div>
         <!-- /Education Content -->
@@ -91,16 +93,18 @@
               <h5>Experience</h5>
               <a href="#"><i class="fa-regular fa-pen-to-square"></i></a>
             </div>
-            <div *ngFor="let data of instructorEditExperience">
+            @for (data of instructorEditExperience; track data) {
               <div>
-                <div><span>{{ data.letter }}</span></div>
                 <div>
-                  <h6>{{ data.heading }}</h6>
-                  <p>{{ data.paragraph }}</p>
-                  <p>{{ data.content }}</p>
+                  <div><span>{{ data.letter }}</span></div>
+                  <div>
+                    <h6>{{ data.heading }}</h6>
+                    <p>{{ data.paragraph }}</p>
+                    <p>{{ data.content }}</p>
+                  </div>
                 </div>
               </div>
-            </div>
+            }
           </div>
         </div>
         <!-- /Experience Content -->
@@ -110,54 +114,56 @@
           <div>
             <h5>Courses</h5>
             <div>
-              <div *ngFor="let data of instructorEditCourses">
+              @for (data of instructorEditCourses; track data) {
                 <div>
                   <div>
                     <div>
-                      <a [routerLink]="routes.page_course_details">
-                        <img alt="" [src]="data.img1">
-                      </a>
-                      <div><h3>{{ data.newPrice }} <span>{{ data.oldPrice }}</span></h3></div>
-                    </div>
-                    <div>
+                      <div>
+                        <a [routerLink]="routes.page_course_details">
+                          <img alt="" [src]="data.img1">
+                        </a>
+                        <div><h3>{{ data.newPrice }} <span>{{ data.oldPrice }}</span></h3></div>
+                      </div>
                       <div>
                         <div>
-                          <a [routerLink]="routes.instructor_instructor_profile"><img [src]="data.img2" alt=""></a>
                           <div>
-                            <h4><a [routerLink]="routes.instructor_instructor_profile">{{ data.name }}</a></h4>
-                            <p>{{ data.role }}</p>
+                            <a [routerLink]="routes.instructor_instructor_profile"><img [src]="data.img2" alt=""></a>
+                            <div>
+                              <h4><a [routerLink]="routes.instructor_instructor_profile">{{ data.name }}</a></h4>
+                              <p>{{ data.role }}</p>
+                            </div>
+                          </div>
+                          <div>
+                            <a href="#" (click)="toggleClass(data)"><i class="fa-heart" [ngClass]="data.active ? 'fa-solid' : 'fa-regular'"></i></a>
+                          </div>
+                        </div>
+                        <h3><a [routerLink]="routes.page_course_details">{{ data.content1 }}</a></h3>
+                        <div>
+                          <div>
+                            <img [src]="data.img3" alt="">
+                            <p>{{ data.lesson }}</p>
+                          </div>
+                          <div>
+                            <img [src]="data.img4" alt="">
+                            <p>{{ data.time }}</p>
                           </div>
                         </div>
                         <div>
-                          <a href="#" (click)="toggleClass(data)"><i class="fa-heart" [ngClass]="data.active ? 'fa-solid' : 'fa-regular'"></i></a>
-                        </div>
-                      </div>
-                      <h3><a [routerLink]="routes.page_course_details">{{ data.content1 }}</a></h3>
-                      <div>
-                        <div>
-                          <img [src]="data.img3" alt="">
-                          <p>{{ data.lesson }}</p>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <span><span>{{ data.rating1 }}</span> {{ data.rating2 }}</span>
                         </div>
                         <div>
-                          <img [src]="data.img4" alt="">
-                          <p>{{ data.time }}</p>
+                          <a [routerLink]="routes.page_checkout">{{ data.content2 }}</a>
                         </div>
-                      </div>
-                      <div>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <span><span>{{ data.rating1 }}</span> {{ data.rating2 }}</span>
-                      </div>
-                      <div>
-                        <a [routerLink]="routes.page_checkout">{{ data.content2 }}</a>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              }
             </div>
           </div>
         </div>
@@ -167,28 +173,30 @@
         <div>
           <div>
             <h5>Reviews</h5>
-            <div *ngFor="let data of instructorEditReviews">
+            @for (data of instructorEditReviews; track data) {
               <div>
                 <div>
                   <div>
-                    <img [src]="data.img" alt="img">
+                    <div>
+                      <img [src]="data.img" alt="img">
+                    </div>
+                    <div>
+                      <h5>{{ data.name }}</h5>
+                      <p>{{ data.role }}</p>
+                    </div>
                   </div>
                   <div>
-                    <h5>{{ data.name }}</h5>
-                    <p>{{ data.role }}</p>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
                   </div>
                 </div>
-                <div>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
+                <p>{{ data.content }}</p>
+                <a href="#"><i class="feather icon-corner-up-left"></i> {{ data.setting }}</a>
               </div>
-              <p>{{ data.content }}</p>
-              <a href="#"><i class="feather icon-corner-up-left"></i> {{ data.setting }}</a>
-            </div>
+            }
           </div>
         </div>
         <!-- /Reviews -->
@@ -235,33 +243,37 @@
         <!-- /Right Sidebar Tags Label -->
 
         <!-- Right Sidebar Profile Overview -->
-        <div *ngFor="let data of instructorEdit">
+        @for (data of instructorEdit; track data) {
           <div>
-            <h5>{{ data.heading }}</h5>
             <div>
+              <h5>{{ data.heading }}</h5>
               <div>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <span><span>{{ data.rating1 }}</span> {{ data.rating2 }}</span>
-              </div>
-              <div>
-                <a href="#" (click)="toggleClass(data)"><i class="fa-heart" [ngClass]="data.active ? 'fa-solid' : 'fa-regular'"></i></a>
-              </div>
-            </div>
-            <div>
-              <div *ngFor="let data of instructorEditOverview">
-                <img [src]="data.img" alt="Courses">
                 <div>
-                  <h5>{{ data.heading }}</h5>
-                  <p>{{ data.paragraph }}</p>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <span><span>{{ data.rating1 }}</span> {{ data.rating2 }}</span>
                 </div>
+                <div>
+                  <a href="#" (click)="toggleClass(data)"><i class="fa-heart" [ngClass]="data.active ? 'fa-solid' : 'fa-regular'"></i></a>
+                </div>
+              </div>
+              <div>
+                @for (data of instructorEditOverview; track data) {
+                  <div>
+                    <img [src]="data.img" alt="Courses">
+                    <div>
+                      <h5>{{ data.heading }}</h5>
+                      <p>{{ data.paragraph }}</p>
+                    </div>
+                  </div>
+                }
               </div>
             </div>
           </div>
-        </div>
+        }
         <!-- /Right Sidebar Profile Overview -->
 
         <!-- Right Contact Details -->
@@ -269,13 +281,15 @@
           <div>
             <h5>Contact Details</h5>
             <div>
-              <div *ngFor="let data of instructorEditContactDetails">
-                <div><img [src]="data.img" alt="Address"></div>
+              @for (data of instructorEditContactDetails; track data) {
                 <div>
-                  <h6>{{ data.heading }}</h6>
-                  <p><a href="#">{{ data.paragraph }}</a></p>
+                  <div><img [src]="data.img" alt="Address"></div>
+                  <div>
+                    <h6>{{ data.heading }}</h6>
+                    <p><a href="#">{{ data.paragraph }}</a></p>
+                  </div>
                 </div>
-              </div>
+              }
             </div>
           </div>
         </div>

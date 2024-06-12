@@ -15,10 +15,10 @@ const routes: Routes = [
           ),
       },
       {
-        path: 'enrolees',
+        path: 'students',
         loadChildren: () =>
-          import('./admin/enrolees/enrolees.module').then(
-            (m) => m.EnroleesModule
+          import('./admin/students/students.module').then(
+            (m) => m.StudentsModule
           ),
       },
       {
