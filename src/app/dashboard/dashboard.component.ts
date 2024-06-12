@@ -1,4 +1,3 @@
-// src/app/dashboard/dashboard.component.ts
 import { Component } from '@angular/core';
 import { routes } from '../shared/service/routes/routes';
 

@@ -4848,7 +4848,7 @@ export class DataService {
           subMenus: [
             {
               menuValue: 'Coming Soon',
-              route: routes.comming_soon,
+              route: routes.coming_soon,
               hasSubRoute: false,
               showSubRoute: false,
               base: 'error',
