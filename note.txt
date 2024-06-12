@@ -4,14 +4,14 @@ ng generate component dashboard
 ng generate module dashboard/admin/media-manager --routing
 ng generate component dashboard/admin/media-manager
 
-ng generate module dashboard/admin/enrolees --routing
-ng generate component dashboard/admin/enrolees
+ng generate module dashboard/admin/students --routing
+ng generate component dashboard/admin/students
 
-ng generate module dashboard/admin/enrolees/import --routing
-ng generate component dashboard/admin/enrolees/import
+ng generate module dashboard/admin/students/import --routing
+ng generate component dashboard/admin/students/import
 
-ng generate module dashboard/admin/enrolees/settings --routing
-ng generate component dashboard/admin/enrolees/settings
+ng generate module dashboard/admin/students/settings --routing
+ng generate component dashboard/admin/students/settings
 
 ng generate module dashboard/admin/instructors --routing
 ng generate component dashboard/admin/instructors
@@ -210,3 +210,13 @@ ng generate component dashboard/admin/appearance
 
 ng generate module dashboard/admin/utility --routing
 ng generate component dashboard/admin/utility
+
+
+
+
+
+
+
+others
+converting to the new control flow automatically
+use: ng g @angular/core:control-flow

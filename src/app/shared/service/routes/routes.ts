@@ -413,4 +413,10 @@ export class routes {
   public static get home4(): string {
     return this.baseUrl + '/home-four';
   }
+
+  // Joemar Routes
+
+  public static get dashboard(): string {
+    return this.baseUrl + '/dashboard';
+  }
 }
