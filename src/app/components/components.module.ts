@@ -17,7 +17,7 @@ import { FooterTopContainerComponent } from '../layouts/footer/footer-top-contai
     FooterComponent,
     AdminHeaderComponent,
     StudentHeaderComponent,
-    FooterTopContainerComponent
+    FooterTopContainerComponent,
   ],
   imports: [CommonModule, ComponentsRoutingModule, SharedModule],
 })
