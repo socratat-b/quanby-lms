@@ -8,4 +8,23 @@ import { routes } from '../shared/service/routes/routes';
 })
 export class DashboardComponent {
   public routes = routes;
+  public searchQuery = '';
+  public isOpen: { [key: string]: boolean } = {
+    mediaManager: false,
+    users: false,
+    settings: false,
+    noMainRoute: false
+  };
+
+  toggleDropdown(section: string) {
+    this.isOpen[section] = !this.isOpen[section];
+  }
+
+  searchRoutes() {
+    // Logic to search and navigate to routes based on searchQuery
+    const matchedRouteKey = Object.keys(this.routes).find((key) => key.toLowerCase().includes(this.searchQuery.toLowerCase()));
+    if (matchedRouteKey) {
+      // Navigate to the matched route
+    }
+  }
 }

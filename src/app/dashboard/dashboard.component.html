@@ -1,116 +1,947 @@
-<h1 class="text-fuchsia-200">Dashboard</h1>
+<!-- <div class="flex min-h-screen bg-gray-100 text-gray-900">
+    <aside class="w-64 bg-gray-100 text-gray-700">
+      <h1 class="text-blue-600 text-2xl font-bold p-4">Quanby LMS</h1>
+      <nav class="flex-1 overflow-y-auto">
+        <ul class="space-y-2 p-4">
+          <li>
+            <a
+              [routerLink]="routes.media_manager"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Media Manager</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.media_manager_create"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Create Media</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.media_manager_settings"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Media Manager Settings</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.users_instructors"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Instructors</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.users_instructors_payout"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Instructors Payout</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.users_students"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Students</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.users_staffs"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Staffs</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.users_roles"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Roles</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.users_delete_account_requests"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Delete Account Requests</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.departments"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Departments</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.courses_categories"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Course Categories</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.courses_levels"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Course Levels</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.courses_settings"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Course Settings</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.courses_subjects"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Course Subjects</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.quizzes_question_groups"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Question Groups</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.quizzes_question_banks"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Question Banks</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.quizzes_setups"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Quiz Setups</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.quizzes_results"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Quiz Results</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.virtual_classes"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Virtual Classes</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.zoom_settings"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Zoom Settings</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.certificates"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Certificates</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.certificates_fonts"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Certificate Fonts</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.certificates_settings"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Certificate Settings</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.revenue"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Revenue</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.revenue_instructors"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Instructors Revenue</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.revenue_statistics"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Revenue Statistics</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.enrollments"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Enrollments</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.enrollments_refund_n_cancellation"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Refund and Cancellation</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.enrollments_refund_settings"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Refund Settings</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.communication_notifications"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Notifications</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.communication_private_messages"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Private Messages</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.coupons_manage"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Manage Coupons</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.coupons_single"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Single Coupons</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.coupons_personalized"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Personalized Coupons</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.coupons_invite_code"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Invite Code Coupons</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.coupons_invite_settings"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Invite Settings</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.payment_online"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Online Payment</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.payment_offline"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Offline Payment</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.payment_bank"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Bank Payment</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.payment_commission"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Payment Commission</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.blogs"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Blogs</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.blogs_comments"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Blog Comments</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.questions"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Questions</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.questions_settings"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Question Settings</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.cmo_header_menu"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Header Menu</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.cmo_menu_settings"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Menu Settings</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.cmo_sliders"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Sliders</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.cmo_sliders_settings"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Slider Settings</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.cmo_page_content"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Page Content</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.cmo_testimonials"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Testimonials</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.cmo_social_settings"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Social Settings</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.cmo_pages"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Pages</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.cmo_become_instructor"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Become an Instructor</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.cmo_sponsors"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Sponsors</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.cmo_popup_content"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Popup Content</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.cmo_footer_settings"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Footer Settings</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.cmo_login_page"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Login Page</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.cmo_faq"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >FAQ</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.cmo_header_footer_style"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Header Footer Style</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.gamification"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Gamification</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.gamification_badges"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Gamification Badges</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.gamification_history"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Gamification History</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.settings_system"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >System Settings</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.settings_api"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >API Settings</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.settings_sms"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >SMS Settings</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.settings_vimeo"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Vimeo Settings</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.settings_vdocipher"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Vdocipher Settings</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.settings_localization"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Localization Settings</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.settings_module_manager"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Module Manager</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.settings_sidebar_manager"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Sidebar Manager</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.settings_themes"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Themes Settings</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.settings_themes_customize"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Themes Customize</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.settings_themes_font"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Themes Font</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.settings_newsletter"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Newsletter Settings</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.settings_newsletter_mailchimp"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Mailchimp Settings</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.settings_newsletter_get_response"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >GetResponse Settings</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.settings_newsletter_acelle"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Acelle Settings</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.settings_newsletter_subscriber"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Subscriber Settings</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.settings_push_notification"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Push Notification Settings</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.settings_utilities"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Utilities Settings</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.settings_preloader"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Preloader Settings</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.settings_geo_location"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Geo Location Settings</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.settings_error_log"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Error Log Settings</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.settings_ip_block"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >IP Block Settings</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.settings_maintenance"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Maintenance Settings</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.settings_update_system"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Update System Settings</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.settings_city"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >City Settings</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.settings_cache"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Cache Settings</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.settings_queue"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Queue Settings</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.settings_cron_job"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Cron Job Settings</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.settings_captcha"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Captcha Settings</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.settings_social_login"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Social Login Settings</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.settings_payout_accounts"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Payout Accounts Settings</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.settings_cookie"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Cookie Settings</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.settings_analytics"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Analytics Settings</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.settings_pusher"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Pusher Settings</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.settings_gdrive"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Gdrive Settings</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.settings_seo"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >SEO Settings</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.settings_currencies"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Currencies Settings</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.settings_timezone"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Timezone Settings</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.settings_activation"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Activation Settings</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.settings_general"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >General Settings</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.settings_email"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Email Settings</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.settings_email_template"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Email Template Settings</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.settings_payout"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Payout Settings</a>
+          </li>
+          <li>
+            <a
+              [routerLink]="routes.settings_backup"
+              routerLinkActive="bg-purple-200 text-black"
+              class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black"
+            >Backup Settings</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    
+    <div class="flex-1 flex flex-col">
+      <header class="bg-gray-100 shadow-sm text-gray-700 p-4 flex items-center justify-between">
+        <h1 class="text-purple-600 text-2xl font-bold">Dashboard</h1>
+  
+        <div class="flex items-center space-x-4">
+          <input
+            type="text"
+            placeholder="Search..."
+            (keyup.enter)="searchRoutes()"
+            class="p-2 rounded bg-gray-100 border-purple-200 border text-gray-500 placeholder-gray-400 focus:outline-purple-600 focus:bg-gray-100"
+          />
+          <button (click)="searchRoutes()" class="p-2 text-gray-100 bg-purple-600 rounded">Search</button>
+        </div>
+      </header>
+      <main class="flex-1 p-6 bg-gray-100">
+        <a [routerLink]="routes.home" class="text-black hover:text-gray-300">Back to Home</a>
+  
+        <router-outlet></router-outlet>
+      </main>
+    </div>
+  </div> -->
+  
 
-<a [routerLink]="routes.home">Back to Home</a>
+  <div class="flex min-h-screen bg-gray-100 text-gray-900">
+    <aside class="w-64 bg-gray-100 text-gray-700">
+      <h1 class="text-black text-2xl font-bold p-4">Quanby LMS</h1>
+      <nav class="flex-1 overflow-y-auto">
+        <ul class="space-y-2 p-4">
+          <!-- Media Manager Routes -->
+          <li>
+            <div class="flex items-center justify-between p-2 text-gray-500 hover:bg-purple-200 hover:text-black cursor-pointer" (click)="toggleDropdown('mediaManager')">
+              <span>Media Manager</span>
+              <span [ngClass]="{'rotate-180': isOpen['mediaManager']}" class="transform transition-transform duration-300">&#9660;</span>
+            </div>
+            <ul *ngIf="isOpen['mediaManager']" class="space-y-2 ml-4">
+              <li><a [routerLink]="routes.media_manager" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Media Manager</a></li>
+              <li><a [routerLink]="routes.media_manager_create" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Create Media</a></li>
+              <li><a [routerLink]="routes.media_manager_settings" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Media Manager Settings</a></li>
+            </ul>
+          </li>
+  
+          <!-- Users Routes -->
+          <li>
+            <div class="flex items-center justify-between p-2 text-gray-500 hover:bg-purple-200 hover:text-black cursor-pointer" (click)="toggleDropdown('users')">
+              <span>Users</span>
+              <span [ngClass]="{'rotate-180': isOpen['users']}" class="transform transition-transform duration-300">&#9660;</span>
+            </div>
+            <ul *ngIf="isOpen['users']" class="space-y-2 ml-4">
+              <li><a [routerLink]="routes.users_instructors" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Instructors</a></li>
+              <li><a [routerLink]="routes.users_instructors_payout" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Instructors Payout</a></li>
+              <li><a [routerLink]="routes.users_students" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Students</a></li>
+              <li><a [routerLink]="routes.users_staffs" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Staffs</a></li>
+              <li><a [routerLink]="routes.users_roles" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Roles</a></li>
+              <li><a [routerLink]="routes.users_delete_account_requests" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Delete Account Requests</a></li>
+            </ul>
+          </li>
+  
+          <!-- Settings Routes -->
+          <li>
+            <div class="flex items-center justify-between p-2 text-gray-500 hover:bg-purple-200 hover:text-black cursor-pointer" (click)="toggleDropdown('settings')">
+              <span>Settings</span>
+              <span [ngClass]="{'rotate-180': isOpen['settings']}" class="transform transition-transform duration-300">&#9660;</span>
+            </div>
+            <ul *ngIf="isOpen['settings']" class="space-y-2 ml-4">
+              <li><a [routerLink]="routes.settings_system" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">System Settings</a></li>
+              <li><a [routerLink]="routes.settings_api" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">API Settings</a></li>
+              <li><a [routerLink]="routes.settings_sms" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">SMS Settings</a></li>
+              <li><a [routerLink]="routes.settings_vimeo" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Vimeo Settings</a></li>
+              <li><a [routerLink]="routes.settings_vdocipher" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Vdocipher Settings</a></li>
+              <li><a [routerLink]="routes.settings_localization" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Localization Settings</a></li>
+              <li><a [routerLink]="routes.settings_module_manager" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Module Manager</a></li>
+              <li><a [routerLink]="routes.settings_sidebar_manager" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Sidebar Manager</a></li>
+              <li><a [routerLink]="routes.settings_themes" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Themes Settings</a></li>
+              <li><a [routerLink]="routes.settings_themes_customize" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Themes Customize</a></li>
+              <li><a [routerLink]="routes.settings_themes_font" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Themes Font</a></li>
+              <li><a [routerLink]="routes.settings_newsletter" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Newsletter Settings</a></li>
+              <li><a [routerLink]="routes.settings_newsletter_mailchimp" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Mailchimp Settings</a></li>
+              <li><a [routerLink]="routes.settings_newsletter_get_response" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">GetResponse Settings</a></li>
+              <li><a [routerLink]="routes.settings_newsletter_acelle" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Acelle Settings</a></li>
+              <li><a [routerLink]="routes.settings_newsletter_subscriber" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Subscriber Settings</a></li>
+              <li><a [routerLink]="routes.settings_push_notification" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Push Notification Settings</a></li>
+              <li><a [routerLink]="routes.settings_utilities" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Utilities Settings</a></li>
+              <li><a [routerLink]="routes.settings_preloader" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Preloader Settings</a></li>
+              <li><a [routerLink]="routes.settings_geo_location" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Geo Location Settings</a></li>
+              <li><a [routerLink]="routes.settings_error_log" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Error Log Settings</a></li>
+              <li><a [routerLink]="routes.settings_ip_block" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">IP Block Settings</a></li>
+              <li><a [routerLink]="routes.settings_maintenance" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Maintenance Settings</a></li>
+              <li><a [routerLink]="routes.settings_update_system" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Update System Settings</a></li>
+              <li><a [routerLink]="routes.settings_city" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">City Settings</a></li>
+              <li><a [routerLink]="routes.settings_cache" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Cache Settings</a></li>
+              <li><a [routerLink]="routes.settings_queue" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Queue Settings</a></li>
+              <li><a [routerLink]="routes.settings_cron_job" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Cron Job Settings</a></li>
+              <li><a [routerLink]="routes.settings_captcha" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Captcha Settings</a></li>
+              <li><a [routerLink]="routes.settings_social_login" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Social Login Settings</a></li>
+              <li><a [routerLink]="routes.settings_payout_accounts" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Payout Accounts Settings</a></li>
+              <li><a [routerLink]="routes.settings_cookie" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Cookie Settings</a></li>
+              <li><a [routerLink]="routes.settings_analytics" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Analytics Settings</a></li>
+              <li><a [routerLink]="routes.settings_pusher" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Pusher Settings</a></li>
+              <li><a [routerLink]="routes.settings_gdrive" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Gdrive Settings</a></li>
+              <li><a [routerLink]="routes.settings_seo" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">SEO Settings</a></li>
+              <li><a [routerLink]="routes.settings_currencies" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Currencies Settings</a></li>
+              <li><a [routerLink]="routes.settings_timezone" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Timezone Settings</a></li>
+              <li><a [routerLink]="routes.settings_activation" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Activation Settings</a></li>
+              <li><a [routerLink]="routes.settings_general" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">General Settings</a></li>
+              <li><a [routerLink]="routes.settings_email" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Email Settings</a></li>
+              <li><a [routerLink]="routes.settings_email_template" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Email Template Settings</a></li>
+              <li><a [routerLink]="routes.settings_payout" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Payout Settings</a></li>
+              <li><a [routerLink]="routes.settings_backup" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Backup Settings</a></li>
+            </ul>
+          </li>
+  
+          <!-- No Main Route -->
+          <li>
+            <div class="flex items-center justify-between p-2 text-gray-500 hover:bg-purple-200 hover:text-black cursor-pointer" (click)="toggleDropdown('noMainRoute')">
+              <span>No Main Route</span>
+              <span [ngClass]="{'rotate-180': isOpen['noMainRoute']}" class="transform transition-transform duration-300">&#9660;</span>
+            </div>
+            <ul *ngIf="isOpen['noMainRoute']" class="space-y-2 ml-4">
+              <li><a [routerLink]="routes.departments" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Departments</a></li>
+              <li><a [routerLink]="routes.courses_categories" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Course Categories</a></li>
+              <li><a [routerLink]="routes.courses_levels" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Course Levels</a></li>
+              <li><a [routerLink]="routes.courses_settings" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Course Settings</a></li>
+              <li><a [routerLink]="routes.courses_subjects" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Course Subjects</a></li>
+              <li><a [routerLink]="routes.quizzes_question_groups" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Question Groups</a></li>
+              <li><a [routerLink]="routes.quizzes_question_banks" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Question Banks</a></li>
+              <li><a [routerLink]="routes.quizzes_setups" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Quiz Setups</a></li>
+              <li><a [routerLink]="routes.quizzes_results" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Quiz Results</a></li>
+              <li><a [routerLink]="routes.virtual_classes" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Virtual Classes</a></li>
+              <li><a [routerLink]="routes.zoom_settings" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Zoom Settings</a></li>
+              <li><a [routerLink]="routes.certificates" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Certificates</a></li>
+              <li><a [routerLink]="routes.certificates_fonts" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Certificate Fonts</a></li>
+              <li><a [routerLink]="routes.certificates_settings" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Certificate Settings</a></li>
+              <li><a [routerLink]="routes.revenue" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Revenue</a></li>
+              <li><a [routerLink]="routes.revenue_instructors" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Instructors Revenue</a></li>
+              <li><a [routerLink]="routes.revenue_statistics" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Revenue Statistics</a></li>
+              <li><a [routerLink]="routes.enrollments" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Enrollments</a></li>
+              <li><a [routerLink]="routes.enrollments_refund_n_cancellation" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Refund and Cancellation</a></li>
+              <li><a [routerLink]="routes.enrollments_refund_settings" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Refund Settings</a></li>
+              <li><a [routerLink]="routes.communication_notifications" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Notifications</a></li>
+              <li><a [routerLink]="routes.communication_private_messages" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Private Messages</a></li>
+              <li><a [routerLink]="routes.coupons_manage" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Manage Coupons</a></li>
+              <li><a [routerLink]="routes.coupons_single" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Single Coupons</a></li>
+              <li><a [routerLink]="routes.coupons_personalized" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Personalized Coupons</a></li>
+              <li><a [routerLink]="routes.coupons_invite_code" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Invite Code Coupons</a></li>
+              <li><a [routerLink]="routes.coupons_invite_settings" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Invite Settings</a></li>
+              <li><a [routerLink]="routes.payment_online" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Online Payment</a></li>
+              <li><a [routerLink]="routes.payment_offline" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Offline Payment</a></li>
+              <li><a [routerLink]="routes.payment_bank" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Bank Payment</a></li>
+              <li><a [routerLink]="routes.payment_commission" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Payment Commission</a></li>
+              <li><a [routerLink]="routes.blogs" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Blogs</a></li>
+              <li><a [routerLink]="routes.blogs_comments" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Blog Comments</a></li>
+              <li><a [routerLink]="routes.questions" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Questions</a></li>
+              <li><a [routerLink]="routes.questions_settings" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Question Settings</a></li>
+              <li><a [routerLink]="routes.cmo_header_menu" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Header Menu</a></li>
+              <li><a [routerLink]="routes.cmo_menu_settings" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Menu Settings</a></li>
+              <li><a [routerLink]="routes.cmo_sliders" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Sliders</a></li>
+              <li><a [routerLink]="routes.cmo_sliders_settings" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Slider Settings</a></li>
+              <li><a [routerLink]="routes.cmo_page_content" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Page Content</a></li>
+              <li><a [routerLink]="routes.cmo_testimonials" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Testimonials</a></li>
+              <li><a [routerLink]="routes.cmo_social_settings" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Social Settings</a></li>
+              <li><a [routerLink]="routes.cmo_pages" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Pages</a></li>
+              <li><a [routerLink]="routes.cmo_become_instructor" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Become an Instructor</a></li>
+              <li><a [routerLink]="routes.cmo_sponsors" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Sponsors</a></li>
+              <li><a [routerLink]="routes.cmo_popup_content" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Popup Content</a></li>
+              <li><a [routerLink]="routes.cmo_footer_settings" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Footer Settings</a></li>
+              <li><a [routerLink]="routes.cmo_login_page" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Login Page</a></li>
+              <li><a [routerLink]="routes.cmo_faq" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">FAQ</a></li>
+              <li><a [routerLink]="routes.cmo_header_footer_style" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Header Footer Style</a></li>
+              <li><a [routerLink]="routes.gamification" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Gamification</a></li>
+              <li><a [routerLink]="routes.gamification_badges" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Gamification Badges</a></li>
+              <li><a [routerLink]="routes.gamification_history" routerLinkActive="bg-purple-200 text-black" class="block p-2 rounded text-gray-500 hover:bg-purple-200 hover:text-black">Gamification History</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    
+    <div class="flex-1 flex flex-col">
+      <header class="bg-gray-100 shadow-sm text-gray-700 p-4 flex items-center justify-between">
+        <h1 class="text-black text-2xl font-bold">Dashboard</h1>
+        <div class="flex items-center space-x-4">
+          <input type="text" placeholder="Search... not working" (keyup.enter)="searchRoutes()" class="p-2 rounded bg-gray-100 border-purple-200 border text-gray-500 placeholder-gray-400 focus:outline-purple-600 focus:bg-gray-100" />
+          <button (click)="searchRoutes()" class="p-2 text-gray-100 bg-black rounded">Search</button>
+        </div>
+      </header>
+      <main class="flex-1 p-6 bg-gray-100">
+        <a [routerLink]="routes.home" class="text-black hover:text-gray-300">Back to Home</a>
+        <router-outlet></router-outlet>
+      </main>
+    </div>
+  </div>
+  
 
-<nav>
-    <ul>
-        <li><a [routerLink]="routes.media_manager">Media Manager</a></li>
-        <li><a [routerLink]="routes.media_manager_create">Create Media</a></li>
-        <li><a [routerLink]="routes.media_manager_settings">Media Manager Settings</a></li>
-        <li><a [routerLink]="routes.users_instructors">Instructors</a></li>
-        <li><a [routerLink]="routes.users_instructors_payout">Instructors Payout</a></li>
-        <li><a [routerLink]="routes.users_students">Students</a></li>
-        <li><a [routerLink]="routes.users_staffs">Staffs</a></li>
-        <li><a [routerLink]="routes.users_roles">Roles</a></li>
-        <li><a [routerLink]="routes.users_delete_account_requests">Delete Account Requests</a></li>
-        <li><a [routerLink]="routes.departments">Departments</a></li>
-        <li><a [routerLink]="routes.courses_categories">Course Categories</a></li>
-        <li><a [routerLink]="routes.courses_levels">Course Levels</a></li>
-        <li><a [routerLink]="routes.courses_settings">Course Settings</a></li>
-        <li><a [routerLink]="routes.courses_subjects">Course Subjects</a></li>
-        <li><a [routerLink]="routes.quizzes_question_groups">Question Groups</a></li>
-        <li><a [routerLink]="routes.quizzes_question_banks">Question Banks</a></li>
-        <li><a [routerLink]="routes.quizzes_setups">Quiz Setups</a></li>
-        <li><a [routerLink]="routes.quizzes_results">Quiz Results</a></li>
-        <li><a [routerLink]="routes.virtual_classes">Virtual Classes</a></li>
-        <li><a [routerLink]="routes.zoom_settings">Zoom Settings</a></li>
-        <li><a [routerLink]="routes.certificates">Certificates</a></li>
-        <li><a [routerLink]="routes.certificates_fonts">Certificate Fonts</a></li>
-        <li><a [routerLink]="routes.certificates_settings">Certificate Settings</a></li>
-        <li><a [routerLink]="routes.revenue">Revenue</a></li>
-        <li><a [routerLink]="routes.revenue_instructors">Instructors Revenue</a></li>
-        <li><a [routerLink]="routes.revenue_statistics">Revenue Statistics</a></li>
-        <li><a [routerLink]="routes.enrollments">Enrollments</a></li>
-        <li><a [routerLink]="routes.enrollments_refund_n_cancellation">Refund and Cancellation</a></li>
-        <li><a [routerLink]="routes.enrollments_refund_settings">Refund Settings</a></li>
-        <li><a [routerLink]="routes.communication_notifications">Notifications</a></li>
-        <li><a [routerLink]="routes.communication_private_messages">Private Messages</a></li>
-        <li><a [routerLink]="routes.coupons_manage">Manage Coupons</a></li>
-        <li><a [routerLink]="routes.coupons_single">Single Coupons</a></li>
-        <li><a [routerLink]="routes.coupons_personalized">Personalized Coupons</a></li>
-        <li><a [routerLink]="routes.coupons_invite_code">Invite Code Coupons</a></li>
-        <li><a [routerLink]="routes.coupons_invite_settings">Invite Settings</a></li>
-        <li><a [routerLink]="routes.payment_online">Online Payment</a></li>
-        <li><a [routerLink]="routes.payment_offline">Offline Payment</a></li>
-        <li><a [routerLink]="routes.payment_bank">Bank Payment</a></li>
-        <li><a [routerLink]="routes.payment_commission">Payment Commission</a></li>
-        <li><a [routerLink]="routes.blogs">Blogs</a></li>
-        <li><a [routerLink]="routes.blogs_comments">Blog Comments</a></li>
-        <li><a [routerLink]="routes.questions">Questions</a></li>
-        <li><a [routerLink]="routes.questions_settings">Question Settings</a></li>
-        <li><a [routerLink]="routes.cmo_header_menu">Header Menu</a></li>
-        <li><a [routerLink]="routes.cmo_menu_settings">Menu Settings</a></li>
-        <li><a [routerLink]="routes.cmo_sliders">Sliders</a></li>
-        <li><a [routerLink]="routes.cmo_sliders_settings">Slider Settings</a></li>
-        <li><a [routerLink]="routes.cmo_page_content">Page Content</a></li>
-        <li><a [routerLink]="routes.cmo_testimonials">Testimonials</a></li>
-        <li><a [routerLink]="routes.cmo_social_settings">Social Settings</a></li>
-        <li><a [routerLink]="routes.cmo_pages">Pages</a></li>
-        <li><a [routerLink]="routes.cmo_become_instructor">Become an Instructor</a></li>
-        <li><a [routerLink]="routes.cmo_sponsors">Sponsors</a></li>
-        <li><a [routerLink]="routes.cmo_popup_content">Popup Content</a></li>
-        <li><a [routerLink]="routes.cmo_footer_settings">Footer Settings</a></li>
-        <li><a [routerLink]="routes.cmo_login_page">Login Page</a></li>
-        <li><a [routerLink]="routes.cmo_faq">FAQ</a></li>
-        <li><a [routerLink]="routes.cmo_header_footer_style">Header Footer Style</a></li>
-        <li><a [routerLink]="routes.gamification">Gamification</a></li>
-        <li><a [routerLink]="routes.gamification_badges">Gamification Badges</a></li>
-        <li><a [routerLink]="routes.gamification_history">Gamification History</a></li>
-        <li><a [routerLink]="routes.settings_system">System Settings</a></li>
-        <li><a [routerLink]="routes.settings_api">API Settings</a></li>
-        <li><a [routerLink]="routes.settings_sms">SMS Settings</a></li>
-        <li><a [routerLink]="routes.settings_vimeo">Vimeo Settings</a></li>
-        <li><a [routerLink]="routes.settings_vdocipher">Vdocipher Settings</a></li>
-        <li><a [routerLink]="routes.settings_localization">Localization Settings</a></li>
-        <li><a [routerLink]="routes.settings_module_manager">Module Manager</a></li>
-        <li><a [routerLink]="routes.settings_sidebar_manager">Sidebar Manager</a></li>
-        <li><a [routerLink]="routes.settings_themes">Themes Settings</a></li>
-        <li><a [routerLink]="routes.settings_themes_customize">Themes Customize</a></li>
-        <li><a [routerLink]="routes.settings_themes_font">Themes Font</a></li>
-        <li><a [routerLink]="routes.settings_newsletter">Newsletter Settings</a></li>
-        <li><a [routerLink]="routes.settings_newsletter_mailchimp">Mailchimp Settings</a></li>
-        <li><a [routerLink]="routes.settings_newsletter_get_response">GetResponse Settings</a></li>
-        <li><a [routerLink]="routes.settings_newsletter_acelle">Acelle Settings</a></li>
-        <li><a [routerLink]="routes.settings_newsletter_subscriber">Subscriber Settings</a></li>
-        <li><a [routerLink]="routes.settings_push_notification">Push Notification Settings</a></li>
-        <li><a [routerLink]="routes.settings_utilities">Utilities Settings</a></li>
-        <li><a [routerLink]="routes.settings_preloader">Preloader Settings</a></li>
-        <li><a [routerLink]="routes.settings_geo_location">Geo Location Settings</a></li>
-        <li><a [routerLink]="routes.settings_error_log">Error Log Settings</a></li>
-        <li><a [routerLink]="routes.settings_ip_block">IP Block Settings</a></li>
-        <li><a [routerLink]="routes.settings_maintenance">Maintenance Settings</a></li>
-        <li><a [routerLink]="routes.settings_update_system">Update System Settings</a></li>
-        <li><a [routerLink]="routes.settings_city">City Settings</a></li>
-        <li><a [routerLink]="routes.settings_cache">Cache Settings</a></li>
-        <li><a [routerLink]="routes.settings_queue">Queue Settings</a></li>
-        <li><a [routerLink]="routes.settings_cron_job">Cron Job Settings</a></li>
-        <li><a [routerLink]="routes.settings_captcha">Captcha Settings</a></li>
-        <li><a [routerLink]="routes.settings_social_login">Social Login Settings</a></li>
-        <li><a [routerLink]="routes.settings_payout_accounts">Payout Accounts Settings</a></li>
-        <li><a [routerLink]="routes.settings_cookie">Cookie Settings</a></li>
-        <li><a [routerLink]="routes.settings_analytics">Analytics Settings</a></li>
-        <li><a [routerLink]="routes.settings_pusher">Pusher Settings</a></li>
-        <li><a [routerLink]="routes.settings_gdrive">Gdrive Settings</a></li>
-        <li><a [routerLink]="routes.settings_seo">SEO Settings</a></li>
-        <li><a [routerLink]="routes.settings_currencies">Currencies Settings</a></li>
-        <li><a [routerLink]="routes.settings_timezone">Timezone Settings</a></li>
-        <li><a [routerLink]="routes.settings_activation">Activation Settings</a></li>
-        <li><a [routerLink]="routes.settings_general">General Settings</a></li>
-        <li><a [routerLink]="routes.settings_email">Email Settings</a></li>
-        <li><a [routerLink]="routes.settings_email_template">Email Template Settings</a></li>
-        <li><a [routerLink]="routes.settings_payout">Payout Settings</a></li>
-        <li><a [routerLink]="routes.settings_backup">Backup Settings</a></li>
-    </ul>
-</nav>
 
-<router-outlet></router-outlet>
+
+   
