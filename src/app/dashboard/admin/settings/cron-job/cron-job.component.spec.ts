@@ -8,10 +8,9 @@ describe('CronJobComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CronJobComponent]
-    })
-    .compileComponents();
-    
+      imports: [CronJobComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(CronJobComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

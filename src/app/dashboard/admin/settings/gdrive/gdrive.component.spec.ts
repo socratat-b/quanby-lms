@@ -8,10 +8,9 @@ describe('GdriveComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [GdriveComponent]
-    })
-    .compileComponents();
-    
+      imports: [GdriveComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(GdriveComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

@@ -1,10 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
-const routes: Routes = [];
+import { ActivationComponent } from './activation.component';
+const routes: Routes = [
+  {
+    path: '',
+    component: ActivationComponent,
+  },
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class ActivationRoutingModule { }
+export class ActivationRoutingModule {}

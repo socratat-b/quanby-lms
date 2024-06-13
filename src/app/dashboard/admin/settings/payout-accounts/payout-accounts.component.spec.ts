@@ -8,10 +8,9 @@ describe('PayoutAccountsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [PayoutAccountsComponent]
-    })
-    .compileComponents();
-    
+      imports: [PayoutAccountsComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(PayoutAccountsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

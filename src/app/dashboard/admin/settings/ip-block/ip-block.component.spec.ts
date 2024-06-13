@@ -8,10 +8,9 @@ describe('IpBlockComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [IpBlockComponent]
-    })
-    .compileComponents();
-    
+      imports: [IpBlockComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(IpBlockComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

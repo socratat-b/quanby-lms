@@ -4381,9 +4381,9 @@ export class DataService {
     {
       tittle: 'Home',
       base: 'home',
-      base2: 'home-two',
-      base3: 'home-three',
-      base4: 'home-four',
+      // base2: 'home-two',
+      // base3: 'home-three',
+      // base4: 'home-four',
       showAsTab: false,
       separateRoute: false,
       route: 'javascript:void(0)',

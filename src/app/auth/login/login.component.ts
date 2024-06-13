@@ -1,8 +1,10 @@
+// src/app/auth/login/login.component.ts
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { SupabaseService } from 'src/app/shared/service/supabase/supabase.service';
+import { routes } from 'src/app/shared/service/routes/routes';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { DataService } from 'src/app/shared/service/data/data.service';
-import { Router } from '@angular/router';
-import { routes } from 'src/app/shared/service/routes/routes';
 import { welcomeLogin } from 'src/app/models/model';
 
 @Component({
@@ -14,6 +16,9 @@ export class LoginComponent {
   public routes = routes;
   password = 'password';
   show = true;
+  email: string = '';
+  passwordInput: string = '';
+  errorMessage: string | null = null;
 
   public welcomeLogin: welcomeLogin[] = [];
 
@@ -34,20 +39,30 @@ export class LoginComponent {
     },
   };
 
-  constructor(private DataService: DataService, public router: Router) {
-    this.welcomeLogin = this.DataService.welcomeLogin;
+  constructor(
+    private dataService: DataService,
+    private supabaseService: SupabaseService,
+    public router: Router
+  ) {
+    this.welcomeLogin = this.dataService.welcomeLogin;
   }
 
-  onClick() {
-    if (this.password === 'password') {
-      this.password = 'text';
-      this.show = false;
-    } else {
-      this.password = 'password';
-      this.show = true;
-    }
+  togglePasswordVisibility() {
+    this.password = this.password === 'password' ? 'text' : 'password';
+    this.show = !this.show;
   }
-  directIndex() {
-    this.router.navigate(['/instructor/instructor-dashboard']);
+
+  async login() {
+    try {
+      const user = await this.supabaseService.signIn(
+        this.email,
+        this.passwordInput
+      );
+      if (user) {
+        this.router.navigate(['/dashboard']);
+      }
+    } catch (error) {
+      this.errorMessage = 'An unknown error occurred';
+    }
   }
 }

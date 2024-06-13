@@ -2,13 +2,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { GdriveRoutingModule } from './gdrive-routing.module';
-
+import { GdriveComponent } from './gdrive.component';
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule,
-    GdriveRoutingModule
-  ]
+  declarations: [GdriveComponent],
+  imports: [CommonModule, GdriveRoutingModule],
 })
-export class GdriveModule { }
+export class GdriveModule {}

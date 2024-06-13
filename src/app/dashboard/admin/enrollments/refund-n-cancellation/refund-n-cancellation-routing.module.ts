@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
-const routes: Routes = [];
+import {RefundNCancellationComponent } from './refund-n-cancellation.component';
+const routes: Routes = [ {
+  path: '',
+  component: RefundNCancellationComponent,
+},];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

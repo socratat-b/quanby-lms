@@ -2,13 +2,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { CacheRoutingModule } from './cache-routing.module';
-
+import { CacheComponent } from './cache.component';
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule,
-    CacheRoutingModule
-  ]
+  declarations: [CacheComponent],
+  imports: [CommonModule, CacheRoutingModule],
 })
-export class CacheModule { }
+export class CacheModule {}

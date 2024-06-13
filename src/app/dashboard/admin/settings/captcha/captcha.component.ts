@@ -2,11 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-captcha',
-  standalone: true,
-  imports: [],
   templateUrl: './captcha.component.html',
-  styleUrl: './captcha.component.scss'
+  styleUrl: './captcha.component.scss',
 })
-export class CaptchaComponent {
-
-}
+export class CaptchaComponent {}

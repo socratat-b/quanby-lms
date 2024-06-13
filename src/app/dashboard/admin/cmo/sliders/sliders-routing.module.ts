@@ -1,7 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
-const routes: Routes = [];
+import { SlidersComponent } from './sliders.component';
+const routes: Routes = [
+  {
+    path: '',
+    component: SlidersComponent,
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

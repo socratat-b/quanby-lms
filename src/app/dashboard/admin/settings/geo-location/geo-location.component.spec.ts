@@ -8,10 +8,9 @@ describe('GeoLocationComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [GeoLocationComponent]
-    })
-    .compileComponents();
-    
+      imports: [GeoLocationComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(GeoLocationComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

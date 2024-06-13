@@ -8,10 +8,9 @@ describe('GetResponseComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [GetResponseComponent]
-    })
-    .compileComponents();
-    
+      imports: [GetResponseComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(GetResponseComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

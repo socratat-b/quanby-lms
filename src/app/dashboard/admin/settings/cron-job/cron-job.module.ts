@@ -2,13 +2,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { CronJobRoutingModule } from './cron-job-routing.module';
-
+import { CronJobComponent } from './cron-job.component';
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule,
-    CronJobRoutingModule
-  ]
+  declarations: [CronJobComponent],
+  imports: [CommonModule, CronJobRoutingModule],
 })
-export class CronJobModule { }
+export class CronJobModule {}

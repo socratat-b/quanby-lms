@@ -2,13 +2,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { PayoutAccountsRoutingModule } from './payout-accounts-routing.module';
-
+import { PayoutAccountsComponent } from './payout-accounts.component';
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule,
-    PayoutAccountsRoutingModule
-  ]
+  declarations: [PayoutAccountsComponent],
+  imports: [CommonModule, PayoutAccountsRoutingModule],
 })
-export class PayoutAccountsModule { }
+export class PayoutAccountsModule {}
