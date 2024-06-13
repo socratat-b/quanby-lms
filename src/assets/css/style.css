@@ -2,7 +2,22 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
  
+.mainColor {
+  background-color:#222736;
+  
+}
 
+.headerColor {
+  background-color: #262b3c;
+}
+
+.sidebarColor {
+  background-color: #2A3042;
+}
+
+.sidebarFont {
+  color: #a6b0cf;
+}
 
 /*
 Author       : Dreamguys

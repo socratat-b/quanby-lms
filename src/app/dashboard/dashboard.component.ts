@@ -10,7 +10,7 @@ export class DashboardComponent {
   public routes = routes;
   public searchQuery = '';
   public isOpen: { [key: string]: boolean } = {
-    mediaManager: false,
+    media: false,
     users: false,
     settings: false,
     noMainRoute: false
