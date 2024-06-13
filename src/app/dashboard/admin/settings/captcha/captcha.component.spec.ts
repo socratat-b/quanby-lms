@@ -8,10 +8,9 @@ describe('CaptchaComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CaptchaComponent]
-    })
-    .compileComponents();
-    
+      imports: [CaptchaComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(CaptchaComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

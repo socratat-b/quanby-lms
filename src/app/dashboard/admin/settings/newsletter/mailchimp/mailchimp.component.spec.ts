@@ -8,10 +8,9 @@ describe('MailchimpComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [MailchimpComponent]
-    })
-    .compileComponents();
-    
+      imports: [MailchimpComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(MailchimpComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

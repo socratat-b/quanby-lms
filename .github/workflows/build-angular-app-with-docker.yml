@@ -2,9 +2,9 @@ name: Build Angular App With Docker
 
 on:
   push:
-    branches: [ "dev" , "staging", "production" ]
+    branches: [ dev , staging, production]
   pull_request:
-    branches: [ "dev" , "staging", "production" ]
+    branches: [ dev , staging, production]
 
 jobs:
 

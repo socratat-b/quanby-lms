@@ -1,18 +1,13 @@
+<!-- src/app/auth/login/login.component.html -->
 <!-- Main Wrapper -->
 <div>
-
   <!-- Login Banner -->
   <!-- <owl-carousel-o [options]="welcomeLoginOwlOptions">
-    @for (slide of welcomeLogin; track slide) {
-      <ng-template carouselSlide>
-        <img [src]="slide.img" alt="Logo">
-        <h2>{{slide.content1}}<br>{{slide.content2}}</h2>
-        <p>{{slide.paragraph}}</p>
-      </ng-template>
-    }
-    @empty {
-      <p>No slides available.</p>
-    }
+    <ng-template carouselSlide *ngFor="let slide of welcomeLogin">
+      <img [src]="slide.img" alt="Logo">
+      <h2>{{slide.content1}}<br>{{slide.content2}}</h2>
+      <p>{{slide.paragraph}}</p>
+    </ng-template>
   </owl-carousel-o> -->
   <!-- /Login Banner -->
 
@@ -20,19 +15,17 @@
   <!-- <img src="assets/img/logo.svg" alt="Logo"> -->
   <a [routerLink]="routes.home">Back to Home</a>
   <h1>Sign into Your Account</h1>
-  <form>
+  <form (ngSubmit)="login()">
     <label for="email">Email</label>
-    <input type="email" placeholder="Enter your email address">
+    <input type="email" placeholder="Enter your email address" [(ngModel)]="email" name="email" required>
 
     <label for="password">Password</label>
     <div>
-      <input [type]="password" placeholder="Enter your password">
-      @if (show) {
-      <i (click)="onClick()" (keydown)="onClick()" tabindex="1">Show</i>
-      }
-      @else {
-      <i (click)="onClick()" (keydown)="onClick()" tabindex="1">Hide</i>
-      }
+      <input [type]="password" placeholder="Enter your password" [(ngModel)]="passwordInput" name="password" required>
+      <i (click)="togglePasswordVisibility()" tabindex="1" (keydown.enter)="togglePasswordVisibility()"
+        (keydown.space)="togglePasswordVisibility()">
+        {{ show ? 'Show' : 'Hide' }}
+      </i>
     </div>
 
     <a [routerLink]="routes.forgot_password">Forgot Password?</a>
@@ -41,7 +34,7 @@
       <input type="checkbox">
     </label>
 
-    <button type="submit" (click)="directIndex()">Sign In</button>
+    <button type="submit">Sign In</button>
   </form>
   <div>
     <a href="javascript:void(0)">Or sign in with</a>
@@ -55,5 +48,4 @@
     <p>New User? <a [routerLink]="routes.register">Create an Account</a></p>
   </div>
   <!-- /Login -->
-
 </div>

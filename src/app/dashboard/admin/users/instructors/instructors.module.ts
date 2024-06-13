@@ -2,13 +2,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { InstructorsRoutingModule } from './instructors-routing.module';
-
+import { InstructorsComponent } from './instructors.component';
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule,
-    InstructorsRoutingModule
-  ]
+  declarations: [InstructorsComponent],
+  imports: [CommonModule, InstructorsRoutingModule],
 })
-export class InstructorsModule { }
+export class InstructorsModule {}

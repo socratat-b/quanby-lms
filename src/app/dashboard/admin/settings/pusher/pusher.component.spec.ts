@@ -9,8 +9,7 @@ describe('PusherComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [PusherComponent]
-    })
-    .compileComponents();
+    }).compileComponents();
     
     fixture = TestBed.createComponent(PusherComponent);
     component = fixture.componentInstance;

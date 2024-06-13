@@ -2,11 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-virtual-classes',
-  standalone: true,
-  imports: [],
   templateUrl: './virtual-classes.component.html',
-  styleUrl: './virtual-classes.component.scss'
+  styleUrl: './virtual-classes.component.scss',
 })
-export class VirtualClassesComponent {
-
-}
+export class VirtualClassesComponent {}

@@ -8,10 +8,9 @@ describe('ZoomSettingsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ZoomSettingsComponent]
-    })
-    .compileComponents();
-    
+      imports: [ZoomSettingsComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(ZoomSettingsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

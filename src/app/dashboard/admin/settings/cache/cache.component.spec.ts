@@ -8,10 +8,9 @@ describe('CacheComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CacheComponent]
-    })
-    .compileComponents();
-    
+      imports: [CacheComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(CacheComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

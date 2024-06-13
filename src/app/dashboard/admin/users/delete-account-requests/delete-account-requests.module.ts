@@ -2,13 +2,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { DeleteAccountRequestsRoutingModule } from './delete-account-requests-routing.module';
-
+import { DeleteAccountRequestsComponent } from './delete-account-requests.component';
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule,
-    DeleteAccountRequestsRoutingModule
-  ]
+  declarations: [DeleteAccountRequestsComponent],
+  imports: [CommonModule, DeleteAccountRequestsRoutingModule],
 })
-export class DeleteAccountRequestsModule { }
+export class DeleteAccountRequestsModule {}

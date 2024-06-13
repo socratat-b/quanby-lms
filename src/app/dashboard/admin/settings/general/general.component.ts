@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
-
 @Component({
   selector: 'app-general',
-  standalone: true,
-  imports: [],
   templateUrl: './general.component.html',
-  styleUrl: './general.component.scss'
+  styleUrl: './general.component.scss',
 })
-export class GeneralComponent {
-
-}
+export class GeneralComponent {}

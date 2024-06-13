@@ -1,7 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
-const routes: Routes = [];
+import { InviteSettingsComponent } from './invite-settings.component';
+const routes: Routes = [
+  {
+    path: '',
+    component: InviteSettingsComponent,
+  },
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
