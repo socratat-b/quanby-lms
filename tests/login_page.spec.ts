@@ -35,4 +35,5 @@ test.describe('Signin', () => {
 
     // Expects page to have a heading with the name of Installation.
     await expect(page.getByRole('heading', { name: 'Dashboard' })).toBeVisible();
-});
+    });
+}); 
