@@ -45,8 +45,7 @@ dashboard
 │   ├── gamification
 │   │   ├── badges
 │   │   ├── history
-│   ├── media-manager
-│   │   ├── create
+│   ├── media-manager (create-retrieve-delete)
 │   │   ├── settings
 │   ├── payment
 │   │   ├── bank
