@@ -2,22 +2,34 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
  
+/* gray-50 */
 .mainColor {
-  background-color:#222736;
-  
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }
 
-.headerColor {
-  background-color: #262b3c;
+.navbarColor {
+  background-color: white;
 }
 
 .sidebarColor {
-  background-color: #2A3042;
+  background-color: white;
 }
 
-.sidebarFont {
-  color: #a6b0cf;
+/* pink-300 - change later */ 
+.mainTextColor {
+  --tw-text-opacity: 1;
+    color: rgb(249 168 212 / var(--tw-text-opacity));
 }
+
+/* gray-700 - change later */ 
+
+.primaryTextColor {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
+
 
 /*
 Author       : Dreamguys
