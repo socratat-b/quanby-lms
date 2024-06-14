@@ -8,7 +8,7 @@ import { FormSectionComponent } from '../form-section/form-section.component';
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
-  styleUrls: ['./form.component.css'],
+  styleUrls: ['./form.component.scss'],
   standalone: true,
   imports: [CommonModule, MatStepperModule, FormSectionComponent],
 })

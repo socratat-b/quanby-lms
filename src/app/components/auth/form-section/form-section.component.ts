@@ -7,7 +7,7 @@ import { InputField } from '../../../auth/models/input-fields';
 @Component({
   selector: 'app-form-section',
   templateUrl: './form-section.component.html',
-  styleUrls: ['./form-section.component.css'],
+  styleUrls: ['./form-section.component.scss'],
   standalone: true,
   imports: [CommonModule, FormsModule, InputFieldComponent],
 })
