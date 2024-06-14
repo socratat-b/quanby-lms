@@ -1,13 +1,17 @@
-FROM node:20 as angular
+FROM node:20 as build
 
 WORKDIR /app
 
-COPY . .
+COPY package*.json ./
+
 RUN npm install
+
+COPY . .
+
 RUN npm run build
 
-FROM httpd:alpine3.20
+FROM nginx:latest
 
-WORKDIR /usr/local/apache2/htdocs/
+COPY --from=build app/dist/quanbylms /usr/share/nginx/html
 
-COPY --from=angular /app/dist/quanbylms .
+EXPOSE 80
