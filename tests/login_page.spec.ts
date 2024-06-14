@@ -31,9 +31,9 @@ test.describe('Signin', () => {
     await page.getByPlaceholder('Enter your password').fill('testpassword');
 
     // Click the Sign in button
-    await page.getByRole('pushbutton', { name: 'Sign In' }).click();
+    await page.getByRole('button', { name: 'Sign In' }).click();
 
-    // Expects page to have a heading with the name of Installation.
+    // Expects page to have a heading with the name of Dashboard.
     await expect(page.getByRole('heading', { name: 'Dashboard' })).toBeVisible();
     });
 }); 
