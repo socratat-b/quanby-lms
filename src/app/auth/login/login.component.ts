@@ -1,7 +1,7 @@
 // src/app/auth/login/login.component.ts
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { SupabaseService } from 'src/app/shared/service/supabase/supabase.service';
+import { SupabaseService } from 'src/app/shared/service/api-supabase/supabase.service';
 import { routes } from 'src/app/shared/service/routes/routes';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { DataService } from 'src/app/shared/service/data/data.service';
