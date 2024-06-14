@@ -1,23 +1,23 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 
-import { RegisterRoutingModule } from './register-routing.module';
-import { RegisterComponent } from './register.component';
-import { CarouselModule } from 'ngx-owl-carousel-o';
 import { FormsModule } from '@angular/forms';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 import { FeatherIconModule } from 'src/app/shared/module/feather.module';
 
+import { FormComponent } from '../../../components/auth/form/form.component';
+import { RegisterRoutingModule } from './register-routing.module';
+import { RegisterComponent } from './register.component';
 
 @NgModule({
-  declarations: [
-    RegisterComponent
-  ],
+  declarations: [RegisterComponent],
   imports: [
     CommonModule,
     RegisterRoutingModule,
     FormsModule,
     CarouselModule,
-    FeatherIconModule
+    FeatherIconModule,
+    FormComponent,
   ],
 })
-export class RegisterModule { }
+export class RegisterModule {}
